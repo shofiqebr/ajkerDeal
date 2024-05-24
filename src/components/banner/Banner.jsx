@@ -1,4 +1,4 @@
-import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa';
 import banner from '../../assets/banner.jpg'
 
 const Banner = () => {
@@ -10,46 +10,46 @@ const Banner = () => {
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Mens Shopping</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Womens Fashion</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Household</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Kitchen And Dining</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Computer Accessories</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Gadgets</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Jewellery</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Home Decor</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
 						<a href='#'>Cosmetics</a>
 						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+					</li>
 					<li className='py-[1px] flex justify-between items-center px-2'>
-						<a href='#'>All Categories >></a>
-						<FaChevronRight className='opacity-60 text-xs' />
-                    </li>
+						<a href='#'>All Categories &gt;&gt;</a>
+					</li>
 				</ul>
 			</div>
-			<img className='w-full h-80 ' src={banner} alt='' />
+			<img className='w-full h-80' src={banner} alt='' />
+			<div className='bg-[#576BB2] h-80 w-48'></div>
 		</div>
 	);
 };
