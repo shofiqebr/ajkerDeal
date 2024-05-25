@@ -3,7 +3,7 @@ import banner from '../../assets/banner.jpg';
 
 const Banner = () => {
 	return (
-		<div className='flex'>
+		<div className='flex relative'>
 			<div className='bg-[#576BB2] h-80 lg:w-32 lg:block hidden mt-3'></div>
 			<div className='flex flex-col-reverse md:flex-row mt-3'>
 				<div className='bg-white mx-auto h-80 w-60 pt-2 border-b-2'>
@@ -51,9 +51,9 @@ const Banner = () => {
 						
 					</ul>
 				</div>
-				<img className='md:h-80 lg:w-[900px] md:w-[750px]' src={banner} alt='' />
-			</div>
-			{/* <div className='bg-[#576BB2] h-80 w-16 lg:block hidden mt-3'></div> */}
+				<img className='md:h-80 lg:w-[650px] md:w-[450px] z-10' src={banner} alt='' />
+				</div>
+			<div className='bg-[#576BB2] h-80 w-72 md:block  hidden mt-3 absolute right-0 '></div>
 		</div>
 	);
 };

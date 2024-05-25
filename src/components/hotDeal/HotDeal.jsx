@@ -6,11 +6,14 @@ import 'react-tabs/style/react-tabs.css';
 import tShirt from '../../assets/t-shirt.webp';
 import { FaBangladeshiTakaSign } from 'react-icons/fa6';
 import Gadgets from '../gadgets/Gadgets';
+import Shirts from '../shirts/Shirts';
+import FramPart from '../framPart/FramPart';
+
 
 const HotDeal = () => {
 	const [tabIndex, setTabIndex] = useState(0);
 	return (
-		<div className=' my-10 bg-[#F5F5F5] pb-2'>
+		<div className=' mt-10 bg-[#F5F5F5] pb-5'>
 			<div className='max-w-[1200px] mx-auto'>
 				<div className='flex justify-between items-center px-2 '>
 					<div>
@@ -180,6 +183,8 @@ const HotDeal = () => {
 
 
 			<Gadgets/>
+			<Shirts/>
+			<FramPart/>
 		</div>
 	);
 };
