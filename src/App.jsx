@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Navbar2 />
 			<Banner />
-			{/* <HotDeal/> */}
+			<HotDeal/>
      
 		</>
 	);
