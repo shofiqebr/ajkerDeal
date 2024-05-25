@@ -8,7 +8,7 @@ const Banner = () => {
 			<div className='flex flex-col-reverse md:flex-row mt-3'>
 				<div className='bg-white mx-auto h-80 w-60 pt-2 border-b-2'>
 					
-					<ul className=''>
+					<ul className='w-60'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Mens Shopping</a>
 							<FaChevronRight className='opacity-60 text-xs' />
@@ -51,9 +51,9 @@ const Banner = () => {
 						
 					</ul>
 				</div>
-				<img className='md:h-80 lg:w-[900px]' src={banner} alt='' />
+				<img className='md:h-80 lg:w-[900px] md:w-[750px]' src={banner} alt='' />
 			</div>
-			<div className='bg-[#576BB2] h-80 w-16 lg:block hidden mt-3'></div>
+			{/* <div className='bg-[#576BB2] h-80 w-16 lg:block hidden mt-3'></div> */}
 		</div>
 	);
 };
