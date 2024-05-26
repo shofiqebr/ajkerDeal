@@ -8,10 +8,10 @@ const Shirts = () => {
     return (
         <div className="">
 
-		<div className="">
+		<div className="hidden md:block">
 
             {/* nav start */}
-			<div className='navbar bg-[#EBEBEB] flex md:flex-row flex-col h-1 my-4 '>
+			<div className='navbar bg-[#EBEBEB] flex md:flex-row flex-col h-1 my-4'>
 				<div className='flex-1  md:inline-block text-base text-[#0071AC] hover:text-black pl-2'>
 					<a href="">Shirts</a>
 				</div>

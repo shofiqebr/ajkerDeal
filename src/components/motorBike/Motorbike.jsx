@@ -5,7 +5,7 @@ import { FaBangladeshiTakaSign } from "react-icons/fa6";
 
 const Motorbike = () => {
     return (
-        <div className="bg-[#808080] max-w-[1200px] mx-auto px-5 mt-10" >
+        <div className="bg-[#808080] max-w-[1200px] mx-auto px-5 mt-10 md:block hidden" >
 
             <div className="flex justify-between px-2 ">
                 <h1 className="text-white text-2xl pt-2">Motor Bike</h1>

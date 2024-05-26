@@ -9,7 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const Banner = () => {
 	return (
-		<div className='flex relative'>
+		<div className='flex relative m-0 p-0'>
 			<div className='bg-[#576BB2] h-80 lg:w-32 lg:block hidden mt-3'></div>
 			<div className='flex flex-col-reverse md:flex-row mt-3'>
 				<div className='hidden md:block bg-white mx-auto h-80 w-60 pt-2 border-b-2'>

@@ -9,11 +9,11 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className='w-full md:fixed z-20 md:block hidden'>
+		<div className='w-full fixed z-20 md:block hidden'>
 			<div className='w-full md:h-9 bg-[#77787B] md:flex md:justify-end md:pr-32 gap-5'>
-				<div>
+				{/* <div>
 					<img className='w-40 mx-auto pt-2 md:hidden' src={logo} alt="" />
-				</div>
+				</div> */}
 				<ul className='flex gap-5 justify-center items-center md:flex-row flex-col w-full mx-auto py-2'>
 					<li className=' text-white text-sm hover:text-[#F78C66]'>
 						Merchant Corner

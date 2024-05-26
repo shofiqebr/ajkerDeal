@@ -6,10 +6,10 @@ import { IoIosHeartEmpty } from "react-icons/io";
 const Navbar2 = () => {
 	return (
 		<div>
-			<div className=' bg-base-100 md:-w-full px-4 mx-auto flex justify-center items-center md:pt-10'>
+			<div className='bg-base-100 md:w-full flex justify-center items-center md:pt-10 px-4'>
 				<div className='flex-1'>
 					<img
-						className='md:w-32 w-20 lg:ml-36'
+						className='md:w-28 w-20 lg:ml-36'
 						src='http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg'
 						alt=''
 					/>
