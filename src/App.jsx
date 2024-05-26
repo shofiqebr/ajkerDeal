@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <Navbar2 />
 			<Banner />
-			<HotDeal/>
-			<Footer/>
+			{/* <HotDeal/> */}
+			{/* <Footer/> */}
 			
      
 		</>

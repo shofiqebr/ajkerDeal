@@ -8,6 +8,7 @@ import { FaBangladeshiTakaSign } from 'react-icons/fa6';
 import Gadgets from '../gadgets/Gadgets';
 import Shirts from '../shirts/Shirts';
 import FramPart from '../framPart/FramPart';
+import Motorbike from '../motorBike/Motorbike';
 
 
 const HotDeal = () => {
@@ -17,7 +18,7 @@ const HotDeal = () => {
 			<div className='max-w-[1200px] mx-auto'>
 				<div className='flex justify-between items-center px-2 '>
 					<div>
-						<img className='w-44' src={hotDealImg} alt='' />
+						<img className='md:w-44 w-36' src={hotDealImg} alt='' />
 					</div>
 					<div className='border-b-[#F05A2D] border-b-2 p-1'>
 						<button className='flex justify-center items-center gap-1 '>
@@ -184,6 +185,7 @@ const HotDeal = () => {
 
 			<Gadgets/>
 			<Shirts/>
+			<Motorbike/>
 			<FramPart/>
 		</div>
 	);

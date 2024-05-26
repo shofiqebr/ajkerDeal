@@ -5,11 +5,12 @@ import payment2 from '../../assets/payment2.png'
 import payment3 from '../../assets/payment3.png'
 import payment4 from '../../assets/payment4.png'
 import payment5 from '../../assets/payment5.png'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const Footer = () => {
     return (
         <div className="" >
-            <footer className="footer place-items-center p-10 bg-[#404040] text-white">
+            <footer className="footer place-items-center md:p-10 pt-5 bg-[#404040] text-white">
   <nav className="flex flex-col gap-10">
     <div className="flex flex-col">
     <h6 className="footer-title">Customer Care</h6> 
@@ -29,7 +30,7 @@ const Footer = () => {
     </div>
 
   </nav> 
-  <nav className='-mt-14'>
+  <nav className='md:-mt-14'>
     <h6 className="footer-title">AjkerDeal</h6> 
     <a className="link link-hover">Our Address</a>
     <a className="link link-hover">AjkerDeal Blog</a>
@@ -45,7 +46,7 @@ const Footer = () => {
        </a>
     </div>
    </nav> 
-  <nav className='-mt-36'>
+  <nav className='md:-mt-36'>
     <h6 className="footer-title">Payment Method</h6> 
     <div className='grid grid-cols-2'>
         <a href="#">
@@ -66,10 +67,10 @@ const Footer = () => {
     </div>
   
   </nav> 
-  <form className='-mt-36'>
-    <h6 className="footer-title">Newsletter</h6> 
-    <p>More than 1000 products are added daily. at today's deals.com. Subscribe now to get updates on our new products.</p>
-    <fieldset className="form-control w-80">
+  <form className='pt-2 md:-mt-10 p-5'>
+    <h6 className="footer-title ">Newsletter</h6> 
+    <p className='text-left pr-2'>More than 1000 products are added daily. at <br /> today's   deals.com. Subscribe now  to get <br /> updates on our new products.</p>
+    <fieldset className="form-control w-80 ">
       <label className="label">
         <span className="label-text text-white">Enter your email address</span>
       </label> 
@@ -78,6 +79,31 @@ const Footer = () => {
         <button className="w-20 rounded-none bg-black h-10 text-white join-item">Subscribe</button>
       </div>
     </fieldset>
+
+      <div className=' flex flex-col gap-1'>
+
+       <p className='flex gap-3 text-xs'>
+        <a href="#">Questions</a>
+       <a href="#">Opinion</a>
+       <a href="#">Complain</a>
+       </p>
+       <p className='flex gap-5'>
+        <div>Email</div>
+        <div>:info@ajkerdeal.com</div>
+       </p>
+       <p className='flex gap-5'>
+        <div>Inbox</div>
+        <div> :https://www.facebook.com/</div>
+       </p>
+       <div className='flex gap-3 pt-3'>
+        <a href="#"><FaFacebook /></a>
+        <a href="#"><FaYoutube /></a>
+        <a href="#"><FaTwitter /></a>
+        <a href="#"><FaLinkedin /></a>
+        <a href="#"><FaInstagram /></a>
+       </div>
+      </div>
+
   </form>
 </footer>
         </div>

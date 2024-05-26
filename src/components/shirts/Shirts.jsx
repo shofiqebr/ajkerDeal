@@ -11,7 +11,7 @@ const Shirts = () => {
 		<div className="">
 
             {/* nav start */}
-			<div className='navbar bg-[#EBEBEB] flex md:flex-row flex-col h-1 my-4'>
+			<div className='navbar bg-[#EBEBEB] flex md:flex-row flex-col h-1 my-4 '>
 				<div className='flex-1  md:inline-block text-base text-[#0071AC] hover:text-black pl-2'>
 					<a href="">Shirts</a>
 				</div>
@@ -57,8 +57,8 @@ const Shirts = () => {
              {/* nav end */}
 
              {/* card start */}
-             <div className="flex justify-center items-center">
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-1 px-5">
+             <div className="flex justify-center items-center max-w-[1200px] mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-1">
                 <div className='border-2 w-36 h-56 bg-white'>
 							<img className='w-56 h-40' src={shirt} alt='' />
 							<p className='flex justify-start items-center gap-1 pl-2'>
