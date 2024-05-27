@@ -3,6 +3,7 @@ import Footer from './components/footer/Footer';
 
 import HotDeal from './components/hotDeal/HotDeal';
 import MobileBike from './components/mobileBike/MobileBike';
+import MobileFooter from './components/mobileFooter/MobileFooter';
 import MobileFram from './components/mobileFrame/MobileFram';
 import Navbar from './components/navbar/Navbar';
 import Navbar2 from './components/navbar2/Navbar2';
@@ -23,6 +24,7 @@ function App() {
 			<MobileFram/>
 			<PopularItem/>
 			<MobileBike/>
+			<MobileFooter/>
 			
      
 		</>

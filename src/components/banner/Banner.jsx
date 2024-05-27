@@ -57,7 +57,7 @@ const Banner = () => {
 						
 					</ul>
 				</div>
-				<img className='md:block hidden md:h-80 lg:w-[650px] md:w-[450px] z-10' src={banner} alt='' />
+				<img className='md:block hidden md:h-80 lg:w-[800px] md:w-[500px] z-10' src={banner} alt='' />
 				</div>
 
 
@@ -87,7 +87,7 @@ const Banner = () => {
 			
 				
 				{/* carousel for mobile view */}
-			<div className='bg-[#576BB2] h-80 w-72 md:block  hidden mt-3 absolute right-0 '></div>
+			<div className='bg-[#576BB2] h-80 lg:w-[400px] md:w-72 md:block  hidden mt-3 absolute right-0 '></div>
 		</div>
 	);
 };

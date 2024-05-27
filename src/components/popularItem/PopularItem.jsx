@@ -15,12 +15,12 @@ import mobileImg from '../../assets/mobile2.avif'
 
 const PopularItem = () => {
     return (
-        <div className='bg-stone-300 '>
+        <div className='bg-stone-300 md:hidden block '>
             <div className='flex justify-between px-2 '>
                 <p className='text-sm py-3 text-blue-800 font-bold'>Popular Catagory</p>
                 <p className='text-sm py-3 text-blue-800 font-bold'>All Category</p>
             </div>
-             <div className='md:hidden block pb-3 '>
+             <div className=' pb-3 '>
         <Swiper
         slidesPerView={4}
         centeredSlides={false}

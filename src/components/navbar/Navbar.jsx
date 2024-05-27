@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../assets/logo.svg'
+// import logo from '../../assets/logo.svg'
 
 const Navbar = () => {
 	const [activeLanguage, setActiveLanguage] = useState('ENG');
@@ -10,11 +10,11 @@ const Navbar = () => {
 
 	return (
 		<div className='w-full fixed z-20 md:block hidden'>
-			<div className='w-full md:h-9 bg-[#77787B] md:flex md:justify-end md:pr-32 gap-5'>
+			<div className='max-w-[1540px] md:h-9 bg-[#77787B] md:flex md:justify-end md:pr-32 gap-5'>
 				{/* <div>
 					<img className='w-40 mx-auto pt-2 md:hidden' src={logo} alt="" />
 				</div> */}
-				<ul className='flex gap-5 justify-center items-center md:flex-row flex-col w-full mx-auto py-2'>
+				<ul className='flex gap-5 justify-center items-center md:flex-row  mx-auto py-2'>
 					<li className=' text-white text-sm hover:text-[#F78C66]'>
 						Merchant Corner
 					</li>

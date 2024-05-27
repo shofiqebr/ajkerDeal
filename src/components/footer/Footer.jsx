@@ -89,7 +89,7 @@ const Footer = () => {
        </p>
        <p className='flex gap-5'>
         <div>Email</div>
-        <div>:info@ajkerdeal.com</div>
+        <div>:info@xyz.com</div>
        </p>
        <p className='flex gap-5'>
         <div>Inbox</div>

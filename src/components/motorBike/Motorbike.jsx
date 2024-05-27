@@ -16,78 +16,79 @@ const Motorbike = () => {
 
             {/* card start */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5 place-items-center py-5 ">
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
-            <div className="bg-white w-32">
+            <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 mb-5" src={bikeImg} alt="" />
+                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
+      
             </div>
             
             {/* card end */}

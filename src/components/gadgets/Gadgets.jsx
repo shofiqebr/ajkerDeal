@@ -60,54 +60,53 @@ const Gadgets = () => {
 						
 					</TabList>
 					<TabPanel className='bg-transparent md:my-5 my-2 grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
-
-						<div className='md:border-2 md:w-32 md:h-56 bg-white'>
-							<img className='md:w-52 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col text-[8px]'>
+					<div className='md:border-2  md:h-52 bg-white'>
+							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
+							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
 							<p className='flex justify-start items-center gap-1 md:pl-2'>
 								<FaBangladeshiTakaSign className='hidden md:block' />
 								<p className='font-bold'>110</p>
 							</p>
-							<del className='flex items-center opacity-30 md:-mt-2 pl-1'>
+							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
 								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
 								<p className=''>110</p>
 							</del>
 							</div>
 						</div>
-						<div className='md:border-2 md:w-32 md:h-56 bg-white'>
-							<img className='md:w-52 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col text-[8px]'>
+						<div className='md:border-2  md:h-52 bg-white'>
+							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
+							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
 							<p className='flex justify-start items-center gap-1 md:pl-2'>
 								<FaBangladeshiTakaSign className='hidden md:block' />
 								<p className='font-bold'>110</p>
 							</p>
-							<del className='flex items-center opacity-30 md:-mt-2 pl-1'>
+							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
 								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
 								<p className=''>110</p>
 							</del>
 							</div>
 						</div>
-						<div className='md:border-2 md:w-32 md:h-56 bg-white'>
-							<img className='md:w-52 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col text-[8px]'>
+						<div className='md:border-2  md:h-52 bg-white'>
+							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
+							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
 							<p className='flex justify-start items-center gap-1 md:pl-2'>
 								<FaBangladeshiTakaSign className='hidden md:block' />
 								<p className='font-bold'>110</p>
 							</p>
-							<del className='flex items-center opacity-30 md:-mt-2 pl-1'>
+							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
 								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
 								<p className=''>110</p>
 							</del>
 							</div>
 						</div>
-						<div className='md:border-2 md:w-32 md:h-56 bg-white'>
-							<img className='md:w-52 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col text-[8px]'>
+						<div className='md:border-2  md:h-52 bg-white'>
+							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
+							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
 							<p className='flex justify-start items-center gap-1 md:pl-2'>
 								<FaBangladeshiTakaSign className='hidden md:block' />
 								<p className='font-bold'>110</p>
 							</p>
-							<del className='flex items-center opacity-30 md:-mt-2 pl-1'>
+							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
 								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
 								<p className=''>110</p>
 							</del>

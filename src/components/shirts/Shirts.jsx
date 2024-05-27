@@ -59,8 +59,64 @@ const Shirts = () => {
              {/* card start */}
              <div className="flex justify-center items-center max-w-[1200px] mx-auto">
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-1">
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
+							<p className='flex justify-start items-center gap-1 pl-2'>
+								<FaBangladeshiTakaSign />
+								<p className='font-bold'>110</p>
+							</p>
+							
+						</div>
+                <div className='border-2  h-[210px] bg-white'>
+							<img className='w-48 h-40' src={shirt} alt='' />
 							<p className='flex justify-start items-center gap-1 pl-2'>
 								<FaBangladeshiTakaSign />
 								<p className='font-bold'>110</p>
@@ -68,62 +124,7 @@ const Shirts = () => {
 							
 						</div>
                
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
-                <div className='border-2 w-36 h-56 bg-white'>
-							<img className='w-56 h-40' src={shirt} alt='' />
-							<p className='flex justify-start items-center gap-1 pl-2'>
-								<FaBangladeshiTakaSign />
-								<p className='font-bold'>110</p>
-							</p>
-							
-						</div>
+             
                 </div>
 
                 </div>
