@@ -1,7 +1,7 @@
 import { FaChevronRight } from 'react-icons/fa';
 import banner from '../../assets/banner.jpg';
 import banner3 from '../../assets/banner3.avif';
-import payment from '../../assets/payment4.png'
+// import payment from '../../assets/payment4.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 

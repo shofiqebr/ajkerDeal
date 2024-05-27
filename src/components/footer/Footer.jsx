@@ -9,7 +9,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react
 
 const Footer = () => {
     return (
-        <div className="" >
+        <div className="hidden md:block" >
             <footer className="footer place-items-center md:p-10 pt-5 bg-[#404040] text-white">
   <nav className="flex flex-col gap-10">
     <div className="flex flex-col">

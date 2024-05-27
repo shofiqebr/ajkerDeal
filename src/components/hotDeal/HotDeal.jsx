@@ -15,7 +15,7 @@ const HotDeal = () => {
 	const [tabIndex, setTabIndex] = useState(0);
 	return (
 		
-		<div className=' mt-10 md:bg-[#F5F5F5] bg-white border-blue-300 border-[1px] rounded-md md:border-none mx-2 pb-5 z-10'>
+		<div className=' mt-10 md:bg-[#F5F5F5] bg-white border-blue-300 border-[1px] rounded-md md:border-none mx-2 md:pb-5 z-10'>
 			
 			<div className='max-w-[1200px] mx-auto'>
 				<div className='flex justify-between items-center px-2 pb-1 md:pb-0'>

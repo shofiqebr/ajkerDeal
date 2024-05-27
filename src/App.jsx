@@ -2,8 +2,11 @@ import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
 
 import HotDeal from './components/hotDeal/HotDeal';
+import MobileBike from './components/mobileBike/MobileBike';
+import MobileFram from './components/mobileFrame/MobileFram';
 import Navbar from './components/navbar/Navbar';
 import Navbar2 from './components/navbar2/Navbar2';
+import PopularItem from './components/popularItem/PopularItem';
 import SwiperMobile from './components/swiperMobile/SwiperMobile';
 
 
@@ -16,7 +19,10 @@ function App() {
 			<Banner />
 			<SwiperMobile/>
 			<HotDeal/>
-			{/* <Footer/> */}
+			<Footer/>
+			<MobileFram/>
+			<PopularItem/>
+			<MobileBike/>
 			
      
 		</>
