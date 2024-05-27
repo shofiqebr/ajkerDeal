@@ -31,7 +31,9 @@ const MobileFooter = () => {
                 </p>
              
                 <p className="flex justify-center items-center text-xs text-blue-700 pt-3">
-                <FaRegCopyright /> <a className="text-sm" href="https://ioniccorporation.com/">Ionic Corporation</a> 2009 
+                    <div className="flex justify-center items-center">
+                    <pre className="flex justify-center items-center font-bold">Copyright <FaRegCopyright /> </pre>
+                  </div> <pre> <a className="text-sm" href="https://ioniccorporation.com/">IONIC Corporation</a> 2009</pre> 
                 </p>
             </div>
             
