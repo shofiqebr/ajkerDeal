@@ -5,6 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import tShirt from '../../assets/t-shirt.webp';
 import { FaBangladeshiTakaSign } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const Gadgets = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -16,10 +17,12 @@ const Gadgets = () => {
 						<img className='md:w-44 w-32 md:mt-0 -mt-7 bg-white md:bg-transparent' src={gadgets} alt='' />
 					</div>
 					<div className='border-b-[#F05A2D] md:border-b-2 p-1 md:mt-0 -mt-4'>
+					<Link to="/allCategory">
 						<button className='bg-blue-400 flex justify-center items-center gap-1 md:text-black md:bg-transparent text white rounded-2xl md:rounded-none text-white w-10'>
 							All
 							<FaChevronRight className='text-[#F05A2D] hidden md:block' />
 						</button>
+						</Link>
 					</div>
 				</div>
 
@@ -31,35 +34,39 @@ const Gadgets = () => {
 				>
 					<TabList
 						role='tablist'
-						className='text-center  bg-transparent flex  gap-2 py-2'
+						className='text-center  bg- flex  gap-2 py-2'
 					>
 						<Tab
 							role='tab'
-							className='tab  w-16 text-sm bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab  w-16 text-sm  border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						<Tab
 							role='tab'
-							className='tab w-16 text-sm bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						<Tab
 							role='tab'
-							className='tab w-16 text-sm bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						<Tab
 							role='tab'
-							className='tab w-16 text-sm  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab w-16 text-sm border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						
 					</TabList>
-					<TabPanel className='bg-transparent md:my-5 my-2 grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
+					<TabPanel className='bg-transparent md:my-5 my-2 '>
+
+						<div className='grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
+
+						
 					<div className='md:border-2  md:h-52 bg-white'>
 							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
 							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
@@ -111,6 +118,8 @@ const Gadgets = () => {
 								<p className=''>110</p>
 							</del>
 							</div>
+						</div>
+
 						</div>
 						
 						

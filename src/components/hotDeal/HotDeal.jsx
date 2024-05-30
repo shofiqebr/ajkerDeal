@@ -1,6 +1,6 @@
 import hotDealImg from '../../assets/hot-deal-logo.gif';
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
-import { useState } from 'react';
+import {  useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import tShirt from '../../assets/t-shirt.webp';
@@ -9,10 +9,31 @@ import Gadgets from '../gadgets/Gadgets';
 import Shirts from '../shirts/Shirts';
 import FramPart from '../framPart/FramPart';
 import Motorbike from '../motorBike/Motorbike';
+import { Link } from 'react-router-dom';
 
 
 const HotDeal = () => {
 	const [tabIndex, setTabIndex] = useState(0);
+	// const [groups, setGroups] = useState([]);
+
+//   useEffect(() => {
+//     fetch(
+//       `https://erpmethods.vercel.app/gets/Item Group?filters=[["show_in_website", "=", 1]]&fields=["idx","route","name", "image"]`,
+//       {
+//         headers: {
+//           url: "https://ecommerce.ionicerp.xyz/",
+//           api_secret: "f4393c419474a1b",
+//           api_key: "84859bedced40f4",
+//         },
+//       }
+//     )
+//       .then((data) => data.json())
+//       .then((data) => {
+//         setGroups(data);
+// 		console.log(groups);
+//       });
+//   }, []);
+
 	return (
 		
 		<div className=' mt-10 md:bg-[#F5F5F5] bg-white border-blue-300 border-[1px] rounded-md md:border-none mx-2 md:pb-5 z-10'>
@@ -23,10 +44,12 @@ const HotDeal = () => {
 						<img className='md:w-44 w-32 md:mt-0 -mt-7 bg-white md:bg-transparent' src={hotDealImg} alt='' />
 					</div>
 					<div className='border-b-[#F05A2D] md:border-b-2 p-1 md:mt-0 -mt-4'>
+						<Link to="/allCategory">
 						<button className='bg-blue-400 flex justify-center items-center gap-1 md:text-black md:bg-transparent text white rounded-2xl md:rounded-none text-white w-10'>
 							All
 							<FaChevronRight className='text-[#F05A2D] hidden md:block' />
 						</button>
+						</Link>
 					</div>
 				</div>
 
@@ -42,31 +65,34 @@ const HotDeal = () => {
 					>
 						<Tab
 							role='tab'
-							className='tab  w-16 text-sm bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab  w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						<Tab
 							role='tab'
-							className='tab w-16 text-sm bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						<Tab
 							role='tab'
-							className='tab w-16 text-sm bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						<Tab
 							role='tab'
-							className='tab w-16 text-sm  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							Shirts
 						</Tab>
 						
 					</TabList>
-					<TabPanel className='bg-transparent md:my-5 my-2 grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
+					<TabPanel className='bg-transparent md:my-5 my-2 gap-2'>
+
+						
+						<div className='grid lg:grid-cols-8 grid-cols-4 gap-2'>
 
 						<div className='md:border-2  md:h-52 bg-white'>
 							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
@@ -119,6 +145,7 @@ const HotDeal = () => {
 								<p className=''>110</p>
 							</del>
 							</div>
+						</div>
 						</div>
 						{/*  */}
 					

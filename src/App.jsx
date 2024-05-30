@@ -1,3 +1,4 @@
+// import { useEffect, useState } from 'react';
 import Banner from './components/banner/Banner';
 import Footer from './components/footer/Footer';
 
@@ -13,6 +14,29 @@ import SwiperMobile from './components/swiperMobile/SwiperMobile';
 
 
 function App() {
+	// const [groups, setGroups] = useState([]);
+
+	// useEffect(() => {
+	//   fetch(
+	// 	`https://erpmethods.vercel.app/gets/Item Group?filters=[["show_in_website", "=", 1]]&fields=["idx","route","name", "image"]`,
+	// 	{
+	// 	  headers: {
+	// 		url: "https://ecommerce.ionicerp.xyz/",
+	// 		api_secret: "f4393c419474a1b",
+	// 		api_key: "84859bedced40f4",
+	// 	  },
+	// 	}
+	//   )
+	// 	.then((data) => data.json())
+	// 	.then((data) => {
+	// 	  setGroups(data);
+	// 	  console.log(groups);
+	// 	});
+	// }, []);
+  
+
+
+
 	return (
 		<>
       <Navbar />

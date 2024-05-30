@@ -1,6 +1,7 @@
 import { FaChevronRight } from "react-icons/fa";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import shirt from '../../assets/shirt.webp' 
+import { Link } from "react-router-dom";
 
 
 
@@ -46,9 +47,12 @@ const Shirts = () => {
 						</div>
 
 						{/* search end */}
+
+						<Link to="/allCategory">
                         <div className="flex justify-center items-center text-[#F26734] gap-5 pl-3">
                             All <FaChevronRight/>
                         </div>
+						</Link>
 
 					</div>
 				</div>

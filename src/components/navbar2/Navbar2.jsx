@@ -1,9 +1,12 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { FaChevronDown } from "react-icons/fa";
 import { GrUserManager } from "react-icons/gr";
 import { IoIosHeartEmpty } from "react-icons/io";
+import category1 from '../../assets/category1.png'
 
 // import logo from '../../assets/logo.svg';
 const Navbar2 = () => {
+	
 	return (
 		<div>
 			<div className='bg-base-100 md:w-full flex justify-center items-center md:pt-10 px-4'>
@@ -99,7 +102,129 @@ const Navbar2 = () => {
 						<div className="flex justify-center items-center gap-1">
 						<div className="md:hidden"><IoIosHeartEmpty /></div>
 						<div className="md:hidden"><GrUserManager /></div>
-						<div className="md:hidden"><BsThreeDotsVertical /></div>
+
+
+
+						{/* drawer */}
+
+						<div className="drawer md:hidden">
+  <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content">
+    {/* Page content here */}
+    <label htmlFor="my-drawer" className=" drawer-button"><div className="md:hidden"><BsThreeDotsVertical /></div></label>
+  </div> 
+  <div className="drawer-side z-10">
+    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu  w-64  min-h-full bg-white text-base-content">
+      {/* Sidebar content here */}
+	  <div className="fixed">
+		<ul className="text-lg">
+
+      <li><a>Home</a></li>
+      <li><a>Merchant Corner</a></li>
+      <li><a>Track Order</a></li>
+      <li><a>Refund Policy</a></li>
+      <li><a>Replacement Policy</a></li>
+		</ul>
+		
+	  </div>
+	  <div className="fixed left-0 w-full bg-[#F05A2D] text-white mt-60 text-center text-xl p-2 ">
+			Category
+		</div>
+		<div className="pt-72">
+			<ul>
+				<li>
+				<div className="flex justify-between items-center">
+                         <div className="flex justify-between items-center ">
+                        <div className="flex justify-center items-center gap-3">
+
+                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
+                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+                        </div>
+                    </div >
+                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+
+                    </div>
+                    <hr />
+				</li>
+				<li>
+				<div className="flex justify-between items-center">
+                         <div className="flex justify-between items-center ">
+                        <div className="flex justify-center items-center gap-3">
+
+                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
+                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+                        </div>
+                    </div >
+                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+
+                    </div>
+                    <hr />
+				</li>
+				<li>
+				<div className="flex justify-between items-center">
+                         <div className="flex justify-between items-center ">
+                        <div className="flex justify-center items-center gap-3">
+
+                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
+                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+                        </div>
+                    </div >
+                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+
+                    </div>
+                    <hr />
+				</li>
+				<li>
+				<div className="flex justify-between items-center">
+                         <div className="flex justify-between items-center ">
+                        <div className="flex justify-center items-center gap-3">
+
+                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
+                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+                        </div>
+                    </div >
+                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+
+                    </div>
+                    <hr />
+				</li>
+				<li>
+				<div className="flex justify-between items-center">
+                         <div className="flex justify-between items-center ">
+                        <div className="flex justify-center items-center gap-3">
+
+                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
+                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+                        </div>
+                    </div >
+                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+
+                    </div>
+                    <hr />
+				</li>
+				<li>
+				<div className="flex justify-between items-center">
+                         <div className="flex justify-between items-center ">
+                        <div className="flex justify-center items-center gap-3">
+
+                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
+                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+                        </div>
+                    </div >
+                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+
+                    </div>
+                    <hr />
+				</li>
+			</ul>
+		</div>
+      
+    </ul>
+  </div>
+</div>
+
+						
 						</div>
 						
 

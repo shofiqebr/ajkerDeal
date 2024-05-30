@@ -4,6 +4,7 @@ import banner3 from '../../assets/banner3.avif';
 // import payment from '../../assets/payment4.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
 
 
 
@@ -51,9 +52,11 @@ const Banner = () => {
 							<a href='#'>Cosmetics</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						<Link to='/allCategory'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>All Categories &gt;&gt;</a>
 						</li>
+						</Link>
 						
 					</ul>
 				</div>
