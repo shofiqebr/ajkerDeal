@@ -1,10 +1,21 @@
 import { TfiMenuAlt } from "react-icons/tfi";
 import category1 from '../../assets/category1.png'
 import { FaChevronDown } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const AllCategory = () => {
     return (
         <div className="bg-[#F2F2F2] p-10">
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ajker Deal | All Category</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
+
+
+
+
             <div className="bg-white max-w-[1100px] mx-auto p-3 pb-8">
 
 

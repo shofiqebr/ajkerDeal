@@ -1,6 +1,7 @@
+import { Helmet } from "react-helmet";
 import { CiHeart } from "react-icons/ci";
 
-const SubCategory1 = () => {
+const Category = () => {
   const data = [
     {
       id: 1,
@@ -76,6 +77,11 @@ const SubCategory1 = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-4">
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ajker Deal | Category</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
 
       <div className="flex flex-col md:flex-row gap-6 mt-8">
         <div className="md:w-[20%] bg-white p-5 rounded">
@@ -209,4 +215,4 @@ const SubCategory1 = () => {
   );
 };
 
-export default SubCategory1;
+export default Category;

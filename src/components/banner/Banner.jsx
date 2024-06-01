@@ -17,44 +17,61 @@ const Banner = () => {
 					
 					<ul className='w-60'>
 
-						<Link to='/subCategory1'>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Mens Shopping</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
 						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Womens Fashion</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Household</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Kitchen And Dining</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Computer Accessories</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Gadgets</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Jewellery</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Home Decor</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
+						
+						<Link to='/category'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Cosmetics</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
 						<Link to='/allCategory'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>All Categories &gt;&gt;</a>

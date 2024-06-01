@@ -5,9 +5,16 @@ import AllCategory from "../pages/allCategory/AllCategory";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 import Root from "../../Root";
 import CheckOut from "../pages/checkout/CheckOut";
-import AddToCart1 from "../pages/addToCart1/AddToCart1";
-import ProductDetails1 from "../pages/productDetails1/ProductDetails1";
-import SubCategory1 from "../pages/subCategory1/SubCategory1";
+// import AddToCart1 from "../pages/addToCart1/AddToCart1";
+// import ProductDetails1 from "../pages/productDetails1/ProductDetails1";
+// import SubCategory1 from "../pages/subCategory1/SubCategory1";
+// import Item from "../pages/item/Item";
+import Product from "../pages/product/Product";
+import Cart from "../pages/cart/Cart";
+import Landing from "../pages/landing/Landing";
+import Category from "../pages/category/Category";
+import Login from "../pages/login/Login";
+import Registration from "../pages/registration/Registration";
 
 
 
@@ -33,16 +40,28 @@ export const router = createBrowserRouter([
         element: <CheckOut/>
       },
       {
-        path: '/addToCart1',
-        element: <AddToCart1/>
+        path: '/cart',
+        element: <Cart/>
       },
       {
-        path: '/productDetails1',
-        element: <ProductDetails1/>
+        path: '/product',
+        element: <Product/>
       },
       {
-        path: '/subCategory1',
-        element: <SubCategory1/>
+        path: '/category',
+        element: <Category/>
+      },
+      {
+        path: '/landing',
+        element: <Landing/>
+      },
+      {
+        path: '/login',
+        element: <Login/>
+      },
+      {
+        path: '/registration',
+        element: <Registration/>
       },
     ]
       

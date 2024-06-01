@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import logo from '../../assets/logo.svg'
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
 						Track Order
 					</li>
 					<li className=' text-white text-sm hover:text-[#F78C66] hover:.dropdown'>
-						<a href='#'>Login</a>
+						<Link to='/login'><a href='#'>Login</a></Link>
 						<div className='dropdown hidden'>
 							<form className='bg-white'>
 								<input

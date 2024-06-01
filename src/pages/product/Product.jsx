@@ -1,4 +1,5 @@
 // import ReactImageMagnify from "react-image-magnify";
+import { Helmet } from "react-helmet";
 import { BsCashCoin } from "react-icons/bs";
 import { CiHeart, CiShare2 } from "react-icons/ci";
 import { FaBangladeshiTakaSign, FaStar, FaStarHalf } from "react-icons/fa6";
@@ -12,7 +13,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 
-const ProductDetails1 = () => {
+const Product = () => {
   const images = [
     {
       id: 1,
@@ -43,6 +44,14 @@ const ProductDetails1 = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-5  p-2">
+              <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ajker Deal | Product</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
+
+
+
       <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5 place-items-center place-content-center	">
         <Carousel className="z-10">
           {images.map((item) => (
@@ -110,7 +119,7 @@ const ProductDetails1 = () => {
             </div>
           </div>
           <hr className="mt-4" />
-          <div className="flex gap-6 mt-3">
+          <div className="flex gap-2 mt-3">
             <h1 className="text-[#757575]">Color Family</h1>
             <div className="">
               <h1 className="">Not Specified</h1>
@@ -124,16 +133,16 @@ const ProductDetails1 = () => {
             <div className="">
               <h1 className="">Int </h1>
               <div className="flex gap-2 items-center">
-                <button className="py-1 text-[#f36f21] px-4  text-[14px] border mt-1 border-[#f36f21]">
+                <button className="py-1 text-[#f36f21] px-1 md:px-4  md:text-[14px] text-xs border mt-1 border-[#f36f21]">
                   M
                 </button>
-                <button className="py-1 px-4 text-[14px] border mt-1 ">
+                <button className="py-1 px-1 md:px-4 text-xs md:text-[14px] border mt-1 ">
                   XXL
                 </button>
-                <button className="py-1 px-4 text-[14px] border mt-1 ">
+                <button className="py-1 px-1 md:px-4 text-xs md:text-[14px] border mt-1 ">
                   L
                 </button>
-                <button className="py-1  px-4 text-[14px] border mt-1">
+                <button className="py-1 px-1  md:px-4 text-xs md:text-[14px] border mt-1">
                   XL
                 </button>
               </div>
@@ -149,14 +158,16 @@ const ProductDetails1 = () => {
           </div>
           <div className="mt-4 flex gap-3 items-center ">
             <div className="flex-1">
+              <Link to='/landing'>
               <button className="bg-[#2abbe8] hover:bg-[#0881a6] w-full py-2 font-semibold text-white rounded">
                 Buy Now
               </button>
+              </Link>
             </div>
             <div className="flex-1">
               <Link
-                to="/addToCart1"
-                className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 px-10 font-semibold text-white rounded"
+                to="/cart"
+                className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 lg:px-10 md:px-5 px-3 font-semibold text-white rounded"
               >
                 Add To Cart
               </Link>
@@ -220,7 +231,7 @@ const ProductDetails1 = () => {
             </div>
             <p className="text-[#1a9cb7] font-bold">CHAT</p>
           </div>
-          <div className="flex mt-4 justify-betwe+en">
+          <div className="flex mt-4 justify-between">
             <div className="p-4 border">
               <p className="text-[14px]">Warranty not available</p>
               <h1 className="text-xl font-semibold mt-4">70%</h1>
@@ -243,7 +254,7 @@ const ProductDetails1 = () => {
       <div className="max-w-screen-xl mx-auto mt-5 ">
         <div className="flex flex-col md:flex-row  gap-4 ">
           <div className="md:w-[80%] bg-white p-4">
-            <div className="flex gap-12">
+            <div className="flex flex-col md:flex-row lg:gap-12 md:gap-4">
               <div>
                 <div>
                   <div className="flex items-center gap-7">
@@ -272,7 +283,7 @@ const ProductDetails1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="h-24 w-[1px] bg-gray-400"></div>
+              <div className="h-24 w-[1px] bg-gray-400 hidden md:block"></div>
               <div className="flex flex-col md:flex-row  gap-3">
                 <div className="flex flex-col gap-3 -mt-1">
                   <div className="flex text-[#faca51]">
@@ -398,4 +409,4 @@ const ProductDetails1 = () => {
   );
 };
 
-export default ProductDetails1;
+export default Product;

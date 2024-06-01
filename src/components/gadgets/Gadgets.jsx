@@ -11,6 +11,13 @@ const Gadgets = () => {
     const [tabIndex, setTabIndex] = useState(0);
     return (
         <div className=' my-10 md:bg-[#F5F5F5] pb-2 border-t-2 md:border-none border-blue-300'>
+
+
+			
+
+
+
+
         <div className='max-w-[1200px] mx-auto'>
         <div className='flex justify-between items-center px-2 pb-1 md:pb-0'>
 					<div className=''>
@@ -66,7 +73,7 @@ const Gadgets = () => {
 
 						<div className='grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
 
-						<Link to='productDetails1'>
+						<Link to='product'>
 					<div className='md:border-2  md:h-52 bg-white'>
 							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
 							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>

@@ -18,7 +18,7 @@ const Motorbike = () => {
             {/* card start */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5 place-items-center py-5 ">
            
-           <Link to='/productDetails1'>
+           <Link to='/product'>
             <div className="bg-white ">
                 <div className="flex justify-end">
 

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const CheckOut = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -9,7 +10,15 @@ const CheckOut = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 mt-6">
+    <div className="max-w-screen-xl mx-auto px-4 mt-6 pb-5">
+
+
+          <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ajker Deal | Checkout</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
+
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="lg:w-[60%] mt-4 ">
           <h1 className="text-xl font-semibold ">BILLING & SHIPPING</h1>
@@ -137,8 +146,12 @@ const CheckOut = () => {
               </p>
               <div className="mt-4">
                 <textarea
-                  className="textarea textarea-bordered rounded-[50px] bg-[#f5f5f5]  border-gray-300 border px-6"
+                  className="md:block hidden textarea textarea-bordered rounded-[50px] bg-[#f5f5f5]  border-gray-300 border px-6"
                   placeholder="Bio" cols='50' rows="4"
+                ></textarea>
+                <textarea
+                  className="textarea textarea-bordered md:hidden bg-[#f5f5f5]  border-gray-300 border px-6"
+                  placeholder="Bio" cols='35' rows="4"
                 ></textarea>
               </div>
             </div>

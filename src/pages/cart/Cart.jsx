@@ -1,8 +1,18 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-const AddToCart1 = () => {
+const Cart = () => {
     return (
-      <div className="mt-8 max-w-screen-xl mx-auto px-4 bg-[#f9f9f9]">
+      <div className="mt-8 max-w-screen-xl mx-auto px-4 pb-5 bg-[#f9f9f9]">
+
+           <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ajker Deal | Cart</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
+
+
+
         <div className="flex flex-col lg:flex-row gap-3 mt-12">
           <div className="lg:w-[70%] ">
             <div className=" overflow-x-auto">
@@ -91,7 +101,7 @@ const AddToCart1 = () => {
             <hr className="mt-8" />
             <div className="mt-8 flex flex-col-reverse gap-6 lg:flex-row justify-between items-center">
               <div className="flex gap-4 items-center">
-                <input className="border rounded-full py-2 px-4" type="text" name="" id="" placeholder="Coupon Code" />
+                <input className="text-center border rounded-full py-2 md:px-4 " type="text" name="" id="" placeholder="Coupon Code" />
                 <button className="py-2 px-6 bg-red-500 hover:bg-red-800 font-bold text-white rounded-full text-sm">APPLY COUPON</button>
               </div>
               <div>
@@ -135,5 +145,5 @@ const AddToCart1 = () => {
     );
   };
   
-  export default AddToCart1;
+  export default Cart;
   

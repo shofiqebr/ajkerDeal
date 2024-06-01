@@ -1,6 +1,6 @@
-// import Banner from './components/banner/Banner';
-// import Footer from './components/footer/Footer';
 
+
+import { Helmet } from "react-helmet";
 import Banner from "../../components/banner/Banner";
 
 import HotDeal from "../../components/hotDeal/HotDeal";
@@ -13,15 +13,20 @@ import SwiperMobile from "../../components/swiperMobile/SwiperMobile";
 
 
 
-const Home = () => {
+const HomeMain = () => {
     return (
         <>
+
+          <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ajker Deal | Home</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
         
        
               <Banner />
               <SwiperMobile/>
               <HotDeal/>
-              {/* <Footer/> */}
               <MobileFram/>
               <PopularItem/>
               <MobileBike/>
@@ -32,4 +37,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomeMain;
