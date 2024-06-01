@@ -1,6 +1,7 @@
 import { FaChevronRight } from "react-icons/fa";
 import bikeImg from '../../assets/bike.webp'
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 const Motorbike = () => {
@@ -16,6 +17,8 @@ const Motorbike = () => {
 
             {/* card start */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5 place-items-center py-5 ">
+           
+           <Link to='/productDetails1'>
             <div className="bg-white ">
                 <div className="flex justify-end">
 
@@ -25,6 +28,7 @@ const Motorbike = () => {
                 <p className="pl-1">ATV Quad Bike</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
+            </Link>
             <div className="bg-white ">
                 <div className="flex justify-end">
 

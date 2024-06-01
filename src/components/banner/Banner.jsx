@@ -16,10 +16,13 @@ const Banner = () => {
 				<div className='hidden md:block bg-white mx-auto h-80 w-60 pt-2 border-b-2'>
 					
 					<ul className='w-60'>
+
+						<Link to='/subCategory1'>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Mens Shopping</a>
 							<FaChevronRight className='opacity-60 text-xs' />
 						</li>
+						</Link>
 						<li className='py-[1px] flex justify-between items-center px-2'>
 							<a href='#'>Womens Fashion</a>
 							<FaChevronRight className='opacity-60 text-xs' />

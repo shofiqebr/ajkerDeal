@@ -63,7 +63,8 @@ const Shirts = () => {
              {/* card start */}
              <div className="flex justify-center items-center max-w-[1200px] mx-auto">
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-1">
-                <div className='border-2  h-[210px] bg-white'>
+               <Link to='productDetails1'>
+			    <div className='border-2  h-[210px] bg-white'>
 							<img className='w-48 h-40' src={shirt} alt='' />
 							<p className='flex justify-start items-center gap-1 pl-2'>
 								<FaBangladeshiTakaSign />
@@ -71,6 +72,8 @@ const Shirts = () => {
 							</p>
 							
 						</div>
+
+						</Link>
                 <div className='border-2  h-[210px] bg-white'>
 							<img className='w-48 h-40' src={shirt} alt='' />
 							<p className='flex justify-start items-center gap-1 pl-2'>

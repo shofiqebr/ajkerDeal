@@ -41,7 +41,7 @@ const PopularItem = () => {
       >
         <SwiperSlide>
         <div className='flex justify-center items-center flex-col'>
-            <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
+            <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center '>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
             <div className='text-xs'>gadget</div>

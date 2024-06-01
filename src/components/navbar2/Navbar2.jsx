@@ -3,6 +3,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { GrUserManager } from "react-icons/gr";
 import { IoIosHeartEmpty } from "react-icons/io";
 import category1 from '../../assets/category1.png'
+import { Link } from "react-router-dom";
 
 // import logo from '../../assets/logo.svg';
 const Navbar2 = () => {
@@ -11,11 +12,13 @@ const Navbar2 = () => {
 		<div>
 			<div className='bg-base-100 md:w-full flex justify-center items-center md:pt-10 px-4'>
 				<div className='flex-1'>
+					<Link to='/'>
 					<img
 						className='md:w-28 w-20 lg:ml-36'
 						src='http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg'
 						alt=''
 					/>
+					</Link>
 				</div>
 
 				{/* search start */}

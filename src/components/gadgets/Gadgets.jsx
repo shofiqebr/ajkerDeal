@@ -66,7 +66,7 @@ const Gadgets = () => {
 
 						<div className='grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
 
-						
+						<Link to='productDetails1'>
 					<div className='md:border-2  md:h-52 bg-white'>
 							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
 							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
@@ -80,6 +80,7 @@ const Gadgets = () => {
 							</del>
 							</div>
 						</div>
+						</Link>
 						<div className='md:border-2  md:h-52 bg-white'>
 							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
 							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
