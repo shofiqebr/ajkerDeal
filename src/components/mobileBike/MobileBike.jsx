@@ -1,6 +1,6 @@
 import { FaBangladeshiTakaSign, FaChevronRight } from "react-icons/fa6";
 import bikeImg from '../../assets/bike.webp'
-import mobileImg from '../../assets/mobile2.avif'
+// import mobileImg from '../../assets/mobile2.avif'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -24,6 +24,10 @@ const MobileBike = () => {
                 
               
             </div>
+             
+             
+             
+             
               {/* card start here */}
 
 
