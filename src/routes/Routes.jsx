@@ -15,6 +15,7 @@ import Landing from "../pages/landing/Landing";
 import Category from "../pages/category/Category";
 import Login from "../pages/login/Login";
 import Registration from "../pages/registration/Registration";
+import Form from '../pages/landing/files/From'
 
 
 
@@ -62,6 +63,10 @@ export const router = createBrowserRouter([
       {
         path: '/registration',
         element: <Registration/>
+      },
+      {
+        path: '/form',
+        element: <Form/>
       },
     ]
       

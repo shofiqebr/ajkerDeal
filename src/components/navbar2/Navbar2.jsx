@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 
 // import logo from '../../assets/logo.svg';
 const Navbar2 = () => {
-	
+
 	return (
 		<div>
 			<div className='bg-base-100 md:w-full flex justify-center items-center md:pt-10 px-4'>
 				<div className='flex-1'>
 					<Link to='/'>
-					<img
-						className='md:w-28 w-20 lg:ml-36'
-						src='http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg'
-						alt=''
-					/>
+						<img
+							className='md:w-28 w-20 lg:ml-36'
+							src='http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg'
+							alt=''
+						/>
 					</Link>
 				</div>
 
@@ -98,138 +98,283 @@ const Navbar2 = () => {
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
-							
+
 						</div>
 						<div className="flex justify-center items-center gap-1">
-						<div className="md:hidden"><IoIosHeartEmpty /></div>
-						<div className="md:hidden"><GrUserManager /></div>
+							<div className="md:hidden"><IoIosHeartEmpty /></div>
+							<div className="md:hidden"><GrUserManager /></div>
 
 
 
-						{/* drawer */}
 
-						<div className="drawer md:hidden">
-  <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-  <div className="drawer-content">
-    {/* Page content here */}
-    <label htmlFor="my-drawer" className=" drawer-button"><div className="md:hidden"><BsThreeDotsVertical /></div></label>
-  </div> 
-  <div className="drawer-side z-10">
-    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-    <ul className="menu  w-64  min-h-full bg-white text-base-content">
-      {/* Sidebar content here */}
-	  <div className="fixed">
-		<ul className="text-lg">
 
-      <li><a>Home</a></li>
-      <li><a>Merchant Corner</a></li>
-      <li><a>Track Order</a></li>
-      <li><a>Refund Policy</a></li>
-      <li><a>Replacement Policy</a></li>
-		</ul>
-		
-	  </div>
-	  <div className="fixed left-0 w-full bg-[#F05A2D] text-white mt-60 text-center text-xl p-2 ">
-			Category
-		</div>
-		<div className="pt-72">
-			<ul>
-				<li>
-				<div className="flex justify-between items-center">
-                         <div className="flex justify-between items-center ">
-                        <div className="flex justify-center items-center gap-3">
 
-                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
-                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
-                        </div>
-                    </div >
-                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+							{/*mobile  drawer */}
 
-                    </div>
-                    <hr />
-				</li>
-				<li>
-				<div className="flex justify-between items-center">
-                         <div className="flex justify-between items-center ">
-                        <div className="flex justify-center items-center gap-3">
 
-                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
-                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
-                        </div>
-                    </div >
-                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
 
-                    </div>
-                    <hr />
-				</li>
-				<li>
-				<div className="flex justify-between items-center">
-                         <div className="flex justify-between items-center ">
-                        <div className="flex justify-center items-center gap-3">
 
-                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
-                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
-                        </div>
-                    </div >
-                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
 
-                    </div>
-                    <hr />
-				</li>
-				<li>
-				<div className="flex justify-between items-center">
-                         <div className="flex justify-between items-center ">
-                        <div className="flex justify-center items-center gap-3">
+							<div className="drawer md:hidden">
+								<input id="my-drawer" type="checkbox" className="drawer-toggle" />
+								<div className="drawer-content">
+									{/* Page content here */}
+									<label htmlFor="my-drawer" className=" drawer-button"><div className="md:hidden"><BsThreeDotsVertical /></div></label>
+								</div>
+								<div className="drawer-side z-10">
+									<label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+									<ul className="menu  w-64  min-h-full bg-white text-base-content">
+										{/* Sidebar content here */}
+										<div className="fixed">
+											<ul className="text-lg">
 
-                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
-                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
-                        </div>
-                    </div >
-                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+												<li><a>Home</a></li>
+												<li><a>Merchant Corner</a></li>
+												<li><a>Track Order</a></li>
+												<li><a>Refund Policy</a></li>
+												<li><a>Replacement Policy</a></li>
+											</ul>
 
-                    </div>
-                    <hr />
-				</li>
-				<li>
-				<div className="flex justify-between items-center">
-                         <div className="flex justify-between items-center ">
-                        <div className="flex justify-center items-center gap-3">
+										</div>
+										<div className="fixed left-0 w-full bg-[#F05A2D] text-white mt-60 text-center text-xl p-2 ">
+											Category
+										</div>
+										<div className="pt-72">
+											<ul className="flex flex-col gap-4">
+												<div className="group relative cursor-pointer">
 
-                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
-                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
-                        </div>
-                    </div >
-                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
 
-                    </div>
-                    <hr />
-				</li>
-				<li>
-				<div className="flex justify-between items-center">
-                         <div className="flex justify-between items-center ">
-                        <div className="flex justify-center items-center gap-3">
+													<div className="flex justify-between items-center">
+														<div className="flex justify-center items-center gap-3">
 
-                        <a href="#"><img className="w-7" src={category1} alt="" /></a>
-                        <a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
-                        </div>
-                    </div >
-                        <a href="#"><FaChevronDown className="text-blue-500 pl- text-sm" /></a>
+															<a href="#"><img className="w-7" src={category1} alt="" /></a>
+															<a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+														</div>
+														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
+													</div>
+													<hr />
+													{/* sub category start */}
+													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
 
-                    </div>
-                    <hr />
-				</li>
-			</ul>
-		</div>
-      
-    </ul>
-  </div>
-</div>
+													</ul>
+													{/* sub category end */}
 
-						
+												</div>
+												<div className="group relative cursor-pointer">
+
+
+													<div className="flex justify-between items-center">
+														<div className="flex justify-center items-center gap-3">
+
+															<a href="#"><img className="w-7" src={category1} alt="" /></a>
+															<a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+														</div>
+														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
+													</div>
+													<hr />
+													{/* sub category start */}
+													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+
+													</ul>
+													{/* sub category end */}
+
+												</div>
+												<div className="group relative cursor-pointer">
+
+
+													<div className="flex justify-between items-center">
+														<div className="flex justify-center items-center gap-3">
+
+															<a href="#"><img className="w-7" src={category1} alt="" /></a>
+															<a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+														</div>
+														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
+													</div>
+													<hr />
+													{/* sub category start */}
+													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+
+													</ul>
+													{/* sub category end */}
+
+												</div>
+												<div className="group relative cursor-pointer">
+
+
+													<div className="flex justify-between items-center">
+														<div className="flex justify-center items-center gap-3">
+
+															<a href="#"><img className="w-7" src={category1} alt="" /></a>
+															<a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+														</div>
+														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
+													</div>
+													<hr />
+													{/* sub category start */}
+													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+
+													</ul>
+													{/* sub category end */}
+
+												</div>
+												<div className="group relative cursor-pointer">
+
+
+													<div className="flex justify-between items-center">
+														<div className="flex justify-center items-center gap-3">
+
+															<a href="#"><img className="w-7" src={category1} alt="" /></a>
+															<a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+														</div>
+														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
+													</div>
+													<hr />
+													{/* sub category start */}
+													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+
+													</ul>
+													{/* sub category end */}
+
+												</div>
+												<div className="group relative cursor-pointer">
+
+
+													<div className="flex justify-between items-center">
+														<div className="flex justify-center items-center gap-3">
+
+															<a href="#"><img className="w-7" src={category1} alt="" /></a>
+															<a href="#" className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</a>
+														</div>
+														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
+													</div>
+													<hr />
+													{/* sub category start */}
+													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+														<Link to='/category'>
+															<li className="mb-2 hover:text-[#F15B2D]">
+																sub1
+																<hr />
+															</li>
+														</Link>
+
+													</ul>
+													{/* sub category end */}
+
+												</div>
+											</ul>
+										</div>
+
+									</ul>
+								</div>
+							</div>
+
+
 						</div>
-						
+
 
 					</div>
 				</div>

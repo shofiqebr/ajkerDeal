@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import From from "./files/From";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -27,12 +28,15 @@ const Landing = () => {
         </h2>
         <div className="mt-8 text-center"></div>
 
+
+        <Link to='/form'>
         <div className="text-center mt-6 border-4 rounded-full md:w-96 mx-auto border-[#d3ac2b] hover:border-gray-800 p-2 hover:scale-110 duration-300	flex justify-center items-center">
           <button className="font-extrabold py-4 md:px-[85px] px-[40px] bg-[#d3ac2b] rounded-full flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
             <FaShoppingCart />
             অর্ডার করতে চাই
           </button>
         </div>
+        </Link>
         <h1 className="text-red-500 font-extrabold text-2xl text-center mt-8 ">
           “আবায়া-ই সাবিহা” এই মুহূর্তের সর্বাধিক চাহিদার একটি বোরখা। আমাদের আপুরা খুবই পছন্দ করেছেন এই বোরখাটি। আপনিও
           সংগ্রহ করে নিন এখনই!
@@ -141,28 +145,37 @@ const Landing = () => {
               <p>প্রথম অর্ডারে আপনি পেয়ে যাচ্ছেন নাজাত লাইফ টাইম মেম্বারশিপ কার্ড।</p>
             </div>
           </div>
+
+
+          <Link to='/form'>
           <div className="text-center mt-8 border-4 rounded-full md:w-96 mx-auto border-[#d3ac2b] hover:border-gray-800 p-2 hover:scale-110 duration-300 flex justify-center items-center	">
           <button className="font-extrabold  md:px-[85px] px-[32px] bg-[#d3ac2b] rounded-full py-3 flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
             <FaShoppingCart />
             অর্ডার করতে চাই
           </button>
         </div>
+        </Link>
         </div>
       </section>
       {/* --------------------- */}
       <section className="bg-[#F4F3EA] text-center mt-8 p-8">
         <div className="md:max-w-screen-xl md:mx-auto">
           <h1 className="text-3xl font-extrabold text-[#d3ac2b]">প্রয়োজনে হোয়াটসআপ করুনঃ 01928 22 77 88</h1>
+
+
+
+          <Link to='/form'>
           <div className="text-center mt-8 border-4 rounded-full md:w-96 mx-auto border-[#d3ac2b] hover:border-gray-800 p-2 hover:scale-110 duration-300 flex justify-center items-center	">
           <button className="font-extrabold  md:px-[85px] px-[22px] bg-[#d3ac2b] rounded-full py-3 flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
             <FaShoppingCart />
             অর্ডার করতে চাই
           </button>
         </div>
+        </Link>
         </div>
       </section>
 
-      {/* React Feom used */}
+      {/* React Form used */}
       <From />
     </section>
   );
