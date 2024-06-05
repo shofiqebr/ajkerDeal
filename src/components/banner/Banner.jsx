@@ -110,7 +110,7 @@ const Banner = () => {
 			
 				
 				{/* carousel for mobile view */}
-			<div className='bg-[#576BB2] h-80 lg:w-[400px] md:w-72 md:block  hidden mt-3 absolute right-0 '></div>
+			<div className='bg-[#576BB2] h-80 lg:w-[400px] md:w-72 md:block  hidden mt-3 absolute right-[1px] '></div>
 		</div>
 	);
 };
