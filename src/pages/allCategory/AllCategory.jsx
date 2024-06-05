@@ -2,6 +2,7 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import category1 from '../../assets/category1.png'
 import { FaChevronDown } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const AllCategory = () => {
     return (
@@ -30,7 +31,10 @@ const AllCategory = () => {
                 <div className="grid grid-cols-4 gap-5
                 ">
 
+                 
                     <div>
+                       
+                       <Link to='/category'>
                          <div className="flex justify-between items-center">
                         <div className="flex justify-center items-center gap-3">
 
@@ -39,6 +43,7 @@ const AllCategory = () => {
                         </div>
                         <a href="#"><FaChevronDown className="text-blue-500 text-sm" /></a>
                     </div>
+                    </Link>
                     <hr />
 
                     </div>
