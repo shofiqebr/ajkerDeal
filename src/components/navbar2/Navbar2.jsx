@@ -155,21 +155,29 @@ const Navbar2 = () => {
 														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
 													</div>
 													<hr />
+
+
+
+
 													{/* sub category start */}
+
+
+
+
 													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
@@ -192,21 +200,29 @@ const Navbar2 = () => {
 														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
 													</div>
 													<hr />
+
+
+
+
 													{/* sub category start */}
+
+
+
+
 													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
@@ -229,21 +245,29 @@ const Navbar2 = () => {
 														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
 													</div>
 													<hr />
+
+
+
+
 													{/* sub category start */}
+
+
+
+
 													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
@@ -266,21 +290,29 @@ const Navbar2 = () => {
 														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
 													</div>
 													<hr />
+
+
+
+
 													{/* sub category start */}
+
+
+
+
 													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
@@ -303,21 +335,29 @@ const Navbar2 = () => {
 														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
 													</div>
 													<hr />
+
+
+
+
 													{/* sub category start */}
+
+
+
+
 													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
@@ -340,21 +380,29 @@ const Navbar2 = () => {
 														<a href="#"><FaChevronDown className="text-blue-500 text-sm " /></a>
 													</div>
 													<hr />
+
+
+
+
 													{/* sub category start */}
+
+
+
+
 													<ul className="absolute w-52 left-8 top-6 group-hover:block hidden p-3 bg-white z-10">
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
 															</li>
 														</Link>
-														<Link to='/category'>
+														<Link to='/category'  onClick={() => document.getElementById('my-drawer').checked = false}>
 															<li className="mb-2 hover:text-[#F15B2D]">
 																sub1
 																<hr />
@@ -365,6 +413,7 @@ const Navbar2 = () => {
 													{/* sub category end */}
 
 												</div>
+												
 											</ul>
 										</div>
 

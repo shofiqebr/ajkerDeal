@@ -20,7 +20,7 @@ const PopularItem = () => {
                 <p className='text-sm py-3 text-blue-800 font-bold'>Popular Catagory</p>
                 <p className='text-sm py-3 text-blue-800 font-bold'>All Category</p>
             </div>
-             <div className=' pb-3 '>
+             <div className=' pb-5 '>
         <Swiper
         slidesPerView={4}
         centeredSlides={false}
@@ -40,7 +40,7 @@ const PopularItem = () => {
         className="mySwiper pb-5"
       >
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center '>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -48,7 +48,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -56,7 +56,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -64,7 +64,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -72,7 +72,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -80,7 +80,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -88,7 +88,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
@@ -96,7 +96,7 @@ const PopularItem = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col pb-5'>
             <div className='border-2 w-12 bg-white rounded-full flex justify-center items-center'>
             <img className='w-10 rounded-full' src={mobileImg} alt="" />
             </div>
