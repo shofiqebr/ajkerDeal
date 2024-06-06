@@ -59,6 +59,11 @@ const Navbar2 = () => {
 									role='button'
 									className='btn btn-ghost btn-circle md:mr-20'
 								>
+
+
+
+
+								<Link to='/cart'>
 									<div className='indicator '>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
@@ -78,7 +83,17 @@ const Navbar2 = () => {
 											8
 										</span>
 									</div>
+								</Link>
+
+
+
+
 								</div>
+
+
+
+
+
 
 								<div
 									tabIndex={0}
