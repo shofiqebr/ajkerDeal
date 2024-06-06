@@ -36,7 +36,7 @@ const HotDeal = () => {
 
 	return (
 		
-		<div className=' mt-10 md:bg-[#F5F5F5] bg-white border-blue-300 border-[1px] rounded-md md:border-none mx-auto  md:pb-5 z-10'>
+		<div className=' mt-10 md:bg-[#F5F5F5] bg-white border-blue-300 border-[1px] rounded-md md:border-none md:pb-5 z-10'>
 			
 			<div className='max-w-[1200px] mx-auto'>
 				<div className='flex justify-between items-center px-2 pb-1 md:pb-0'>
@@ -89,10 +89,13 @@ const HotDeal = () => {
 						</Tab>
 						
 					</TabList>
-					<TabPanel className='bg-transparent md:my-5 my-2 gap-2'>
+					<TabPanel className='bg-transparent md:my-5 my-2'>
+
+						<div className='flex justify-center items-center'>
 
 						
-						<div className='grid lg:grid-cols-8 grid-cols-4 gap-2'>
+						
+						<div className='grid xl:grid-col-8 grid-cols-4  gap-2'>
 
 
 
@@ -150,6 +153,7 @@ const HotDeal = () => {
 								<p className=''>110</p>
 							</del>
 							</div>
+						</div>
 						</div>
 						</div>
 						{/*  */}

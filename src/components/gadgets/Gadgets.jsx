@@ -71,7 +71,11 @@ const Gadgets = () => {
 					</TabList>
 					<TabPanel className='bg-transparent md:my-5 my-2 '>
 
-						<div className='grid lg:grid-cols-8 md:grid-cols-4 grid-cols-4 gap-2'>
+						<div className='flex justify-center items-center'>
+
+			
+
+						<div className='grid xl:grid-col-8 grid-cols-4  gap-2'>
 
 						<Link to='product'>
 					<div className='md:border-2  md:h-52 bg-white'>
@@ -128,6 +132,7 @@ const Gadgets = () => {
 							</div>
 						</div>
 
+						</div>
 						</div>
 						
 						
