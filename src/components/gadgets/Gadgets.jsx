@@ -144,7 +144,7 @@ const Gadgets = () => {
 
             {/* tab part end */}
         </div>
-        <div className='md:flex md:justify-end mr-10 hidden'>
+        <div className='md:flex md:justify-end mr-10 hidden lg:mr-20'>
         <button className='flex justify-center items-center gap-2 font-medium p-2 bg-[#F26734] text-white '>More <FaChevronDown className='opacity-80'/></button>
         </div>
     </div>

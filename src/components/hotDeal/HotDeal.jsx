@@ -43,9 +43,9 @@ const HotDeal = () => {
 					<div className=''>
 						<img className='md:w-44 w-32 md:mt-0 -mt-7 bg-white md:bg-transparent' src={hotDealImg} alt='' />
 					</div>
-					<div className='border-b-[#F05A2D] md:border-b-2 p-1 md:mt-0 -mt-4'>
+					<div className='border-b-[#F05A2D] md:border-b-2 p-1 md:mt-0 -mt-4 '>
 						<Link to="/allCategory">
-						<button className='bg-blue-400 flex justify-center items-center gap-1 md:text-black md:bg-transparent text white rounded-2xl md:rounded-none text-white w-10'>
+						<button className='bg-blue-400 flex justify-center items-center gap-1 md:text-black md:bg-transparent text white rounded-2xl md:rounded-none text-white w-10 '>
 							All
 							<FaChevronRight className='text-[#F05A2D] hidden md:block' />
 						</button>
@@ -167,7 +167,7 @@ const HotDeal = () => {
 
 				{/* tab part end */}
 			</div>
-			<div className='md:flex md:justify-end mr-10 hidden'>
+			<div className='md:flex md:justify-end   hidden lg:mr-24'>
 			<button className='flex justify-center items-center gap-2 font-medium p-2 bg-[#F26734] text-white '>More <FaChevronDown className='opacity-80'/></button>
 			</div>
 
