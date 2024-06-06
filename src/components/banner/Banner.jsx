@@ -81,7 +81,7 @@ const Banner = () => {
 						
 					</ul>
 				</div>
-				<img className='md:block hidden md:h-80 lg:w-[800px] md:w-[500px] z-10' src={banner} alt='' />
+				<img className='md:block hidden md:h-80 lg:w-[790px] md:w-[480px] z-10' src={banner} alt='' />
 				</div>
 
 
