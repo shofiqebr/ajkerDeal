@@ -2,11 +2,13 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Profile = () => {
     return (
-        <div className="py-5 flex bg-[#EFF0F4] justify-center">
+        <div className="py-5 flex bg-[#EFF0F4] justify-center lg:gap-10 md:gap-3 flex-col md:flex-row ">
+            
 
+  
             {/* left section */}
 
-            <section className="w-[20%] pl-20">
+            <section className="lg:w-[20%] pl-20">
              <div>
                 <p className="text-sm pb-2">Hello, NameOfCustomer</p>
                 <ul className="font-bold flex flex-col gap-3">
@@ -36,14 +38,14 @@ const Profile = () => {
              </div>
             </section>
 
-
+        
 
             {/* right section */}
-            <section className="w-[80%] "> 
-                <h1 className="font-bold text-2xl pb-3">Manage My Account</h1>
+            <section className="lg:w-[80%] "> 
+                <h1 className="font-bold text-2xl pb-3 pl-3 md:pl-0 pt-5 md:pt-0">Manage My Account</h1>
 
-                <div className="flex gap-3">
-                <div className="bg-white w-[25%] p-3 pb-10 ">
+                <div className="flex gap-3 flex-col lg:flex-row">
+                <div className="bg-white xl:w-[25%]  p-3 pb-10 ">
                     <p className="text-lg font-medium">Personal Profile | EDIT</p>
                     <br />
                     <p>CustomerName</p>
@@ -51,8 +53,8 @@ const Profile = () => {
                     <br />
                     <p>Subscribe to our Newsletter</p>
                 </div>
-                <div className="w-[50%] bg-white flex p-3 justify-evenly">
-                    <div className="border-r pr-20 flex flex-col gap-3">
+                <div className="xl:w-[50%] bg-white flex p-3 md:justify-evenly">
+                    <div className="md:border-r xl:pr-20 lg:pr-10 flex flex-col gap-3">
                         <h3 className="text-lg font-medium">
                             Address Book | ADD
                         </h3>
@@ -62,12 +64,13 @@ const Profile = () => {
                         <IoLocationOutline className="text-3xl" />
                         
                     </div>
-                    <div className="pt-16"> Save your billing address here</div>
+                    <div className="pt-16 px-6 hidden md:block"> Save your billing address here</div>
                 </div>
             </div>
             </section>
+            </div>
             
-        </div>
+        
     );
 };
 
