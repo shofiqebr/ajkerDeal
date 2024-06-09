@@ -8,7 +8,7 @@ const Profile = () => {
   
             {/* left section */}
 
-            <section className="lg:w-[20%] pl-20">
+            <section className="lg:w-[20%] md:pl-20 pl-3">
              <div>
                 <p className="text-sm pb-2">Hello, NameOfCustomer</p>
                 <ul className="font-bold flex flex-col gap-3">
@@ -42,7 +42,7 @@ const Profile = () => {
 
             {/* right section */}
             <section className="lg:w-[80%] "> 
-                <h1 className="font-bold text-2xl pb-3 pl-3 md:pl-0 pt-5 md:pt-0">Manage My Account</h1>
+                <h1 className="font-bold text-center md:text-start text-2xl pb-3 pl-3 md:pl-0 pt-5 md:pt-0">Manage My Account</h1>
 
                 <div className="flex gap-3 flex-col lg:flex-row">
                 <div className="bg-white xl:w-[25%]  p-3 pb-10 ">
