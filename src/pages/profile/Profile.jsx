@@ -13,27 +13,27 @@ const Profile = () => {
                 <p className="text-sm pb-2">Hello, NameOfCustomer</p>
                 <ul className="font-bold flex flex-col gap-3">
                     <li >
-                        Manage My Account
+                       <p className="hover:text-blue-500"> Manage My Account     </p> 
                             <ul className="pl-5 font-medium flex flex-col gap-2" >
                                 
-                                <li>My Profile</li>
-                                <li>Address Book</li>
-                                <li>My Payment Options</li>
-                                <li>Daraz Wallet</li>
-                                <li>Vouchers</li>
+                                <li className="hover:text-blue-500">My Profile</li>
+                                <li className="hover:text-blue-500">Address Book</li>
+                                <li className="hover:text-blue-500">My Payment Options</li>
+                                <li className="hover:text-blue-500">Daraz Wallet</li>
+                                <li className="hover:text-blue-500">Vouchers</li>
                             </ul>
                     </li>
                     <li>
-                        My Order
+                       <p className="hover:text-blue-500">My Order</p> 
                         <ul className="pl-5 font-medium flex flex-col gap-2">
-                            <li>My Returns</li>
-                            <li>My Cancellations</li>
+                            <li className="hover:text-blue-500">My Returns</li>
+                            <li className="hover:text-blue-500">My Cancellations</li>
                         </ul>
                     </li>
-                    <li>My Reviews</li>
-                    <li>My Wishlist</li>
-                    <li>Followed Stores</li>
-                    <li>Sell on Daraz</li>
+                    <li className="hover:text-blue-500">My Reviews</li>
+                    <li className="hover:text-blue-500">My Wishlist</li>
+                    <li className="hover:text-blue-500">Followed Stores</li>
+                    <li className="hover:text-blue-500">Sell on Daraz</li>
                 </ul>
              </div>
             </section>
@@ -46,17 +46,17 @@ const Profile = () => {
 
                 <div className="flex gap-3 flex-col lg:flex-row">
                 <div className="bg-white xl:w-[25%]  p-3 pb-10 ">
-                    <p className="text-lg font-medium">Personal Profile | EDIT</p>
+                    <p className="text-lg font-medium">Personal Profile | <span className="text-blue-500">EDIT</span></p>
                     <br />
                     <p>CustomerName</p>
                     <p>Customeremail@gmail.com</p>
                     <br />
-                    <p>Subscribe to our Newsletter</p>
+                    <p className="text-blue-500">Subscribe to our Newsletter</p>
                 </div>
                 <div className="xl:w-[50%] bg-white flex p-3 md:justify-evenly">
                     <div className="md:border-r xl:pr-20 lg:pr-10 flex flex-col gap-3">
                         <h3 className="text-lg font-medium">
-                            Address Book | ADD
+                            Address Book | <span className="text-blue-500">ADD</span>
                         </h3>
                         <br />
                         <p>Save Your shipping address here</p>
@@ -64,7 +64,7 @@ const Profile = () => {
                         <IoLocationOutline className="text-3xl" />
                         
                     </div>
-                    <div className="pt-16 px-6 hidden md:block"> Save your billing address here</div>
+                    <div className="pt-16 px-6 hidden md:block "> Save your billing address here</div>
                 </div>
             </div>
             </section>
