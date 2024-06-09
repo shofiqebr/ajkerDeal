@@ -16,6 +16,7 @@ import Category from "../pages/category/Category";
 import Login from "../pages/login/Login";
 import Registration from "../pages/registration/Registration";
 import Form from '../pages/landing/files/From'
+import Profile from "../pages/profile/Profile";
 
 
 
@@ -67,6 +68,10 @@ export const router = createBrowserRouter([
       {
         path: '/form',
         element: <Form/>
+      },
+      {
+        path: '/profile',
+        element: <Profile/>
       },
     ]
       
