@@ -141,7 +141,7 @@ const Profile = () => {
                                 <div className="mt-2">
                                     <input
                                         type="text"
-                                        placeholder="Shipping Address"
+                                        placeholder="Billing Address"
                                         value={billingAddress}
                                         onChange={handleBillingAddressChange}
                                         className="border p-2 w-full mb-2"
