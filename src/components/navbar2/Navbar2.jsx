@@ -4,9 +4,12 @@ import { GrUserManager } from "react-icons/gr";
 import { IoIosHeartEmpty } from "react-icons/io";
 import category1 from '../../assets/category1.png'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../../Root";
 
 // import logo from '../../assets/logo.svg';
 const Navbar2 = () => {
+	const {cartItems} = useContext(CartContext);
 
 	return (
 		<div>
@@ -79,9 +82,10 @@ const Navbar2 = () => {
 												d='M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z'
 											/>
 										</svg>
-										<span className='badge badge-sm indicator-item md:block hidden'>
+										{/* <span className='badge badge-sm indicator-item md:block hidden'>
 											8
-										</span>
+										</span> */}
+										<span className="bg-[#F26734] text-white badge badge-md absolute top-[-12px] left-3">{cartItems}</span>
 									</div>
 								</Link>
 
@@ -95,7 +99,7 @@ const Navbar2 = () => {
 
 
 
-								<div
+								{/* <div
 									tabIndex={0}
 									className='mt-3 z-[1] card card-compact dropdown-content md:w-52 w-40 bg-base-100 shadow'
 								>
@@ -112,7 +116,7 @@ const Navbar2 = () => {
 											</button>
 										</div>
 									</div>
-								</div>
+								</div> */}
 
 							</div>
 

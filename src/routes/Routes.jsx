@@ -17,6 +17,7 @@ import Login from "../pages/login/Login";
 import Registration from "../pages/registration/Registration";
 import Form from '../pages/landing/files/From'
 import Profile from "../pages/profile/Profile";
+import { loader } from "../utilities/loader";
 
 
 
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
     {
       path: "/",
       element: <Root />,
+      loader: loader,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -46,15 +48,15 @@ export const router = createBrowserRouter([
         element: <Cart/>
       },
       {
-        path: '/product',
+        path: '/item/:name',
         element: <Product/>
       },
       {
-        path: '/category',
+        path: '/category/:id',
         element: <Category/>
       },
       {
-        path: '/landing',
+        path: '/landing/:name',
         element: <Landing/>
       },
       {

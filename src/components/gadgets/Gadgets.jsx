@@ -18,7 +18,7 @@ const Gadgets = () => {
 
 
 
-        <div className='max-w-[1200px] mx-auto'>
+        <div className=' mx-auto'>
         <div className='flex justify-between items-center px-2 pb-1 md:pb-0'>
 					<div className=''>
 						<img className='md:w-44 w-32 md:mt-0 -mt-7 bg-white md:bg-transparent' src={gadgets} alt='' />
