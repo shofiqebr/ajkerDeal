@@ -4,9 +4,10 @@ import {Link, useNavigate} from "react-router-dom";
 // import Title from "../components/title/Title";
 import {useForm} from "react-hook-form";
 import {toast} from "react-toastify";
-// import {getUser, postData} from "../utilities/cartBD";
+// import {getUser, postData} from "../utilities/Function";
 import Title from "../../components/title/Title";
-import { getUser, postData } from "../../utilities/cartBD";
+import { getUser, postData } from "../../utilities/Function";
+// import { getUser, postData } from "../utilities/Function";
 
 const Registration = () => {
   const navigate = useNavigate();

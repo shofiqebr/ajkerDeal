@@ -3,12 +3,8 @@ import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import {  useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-// import tShirt from '../../assets/t-shirt.webp';
 import { FaBangladeshiTakaSign } from 'react-icons/fa6';
-// import Gadgets from '../gadgets/Gadgets';
-// import Shirts from '../shirts/Shirts';
-// import FramPart from '../framPart/FramPart';
-// import Motorbike from '../motorBike/Motorbike';
+
 import { Link } from 'react-router-dom';
 
 
@@ -48,7 +44,7 @@ const HotDeal = (props) => {
 				>
 					<TabList
 						role='tablist'
-						className='text-center bg-transparent flex  gap-2 py-2 '
+						className='text-center bg-transparent flex  gap-2 py-2  overflow-x-scroll'
 					>
 						
 		{grpData.map((grp, index) => (
@@ -67,9 +63,9 @@ const HotDeal = (props) => {
 					
 
 			{grpData.map((grp, index) => (
-					<TabPanel key={index} className='bg-transparent md:my-5 my-2 '>
+					<TabPanel key={index} className='bg-transparent md:my-5 my-2  overflow-x-scroll'>
 
-						<div className='flex justify-center items-center'>
+						<div className='flex justify-center items-center overflow-x-scroll'>
 
 						
 						

@@ -3,7 +3,7 @@ import { FaBangladeshiTakaSign } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { WebContext } from "../../../Root";
+import { WebContext } from "../../../App";
 
 const Raw = () => {
     const webItmData = useContext(WebContext);
@@ -67,7 +67,7 @@ const Raw = () => {
 	<div className="grid grid-cols-2 md:grid-cols-4 lg:flex lg:justify-center items-center gap-1 max-w-[1200px] flex-wrap">
   
 	{webItmData
-		.filter((item) => item.item_group === 'Raw Meterial')
+		.filter((item) => item.item_group === 'Raw Material')
 		.map((item, idx) => (
 
 <Link to={`../item/${item.item_code}`} key={idx}>

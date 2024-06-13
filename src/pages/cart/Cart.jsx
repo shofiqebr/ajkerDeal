@@ -1,11 +1,13 @@
 import {useContext, useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 // import Title from "../components/title/Title";
-// import {addToProceed, getStrdCart, removeToCart} from "../utilities/cartBD";
+// import {addToProceed, getStrdCart, removeToCart} from "../utilities/Function";
 import {RiDeleteBin6Line} from "react-icons/ri";
-import { CartContext } from "../../../Root";
-import { addToProceed, getStrdCart, removeToCart } from "../../utilities/cartBD";
+// import { CartContext } from "../../../Root";
+// import { addToProceed, getStrdCart, removeToCart } from "../utilities/Function";
 import Title from "../../components/title/Title";
+import { CartContext } from "../../../App";
+import { addToProceed, getStrdCart, removeToCart } from "../../utilities/Function";
 // import {CartContext} from "../App";
 
 const calculateTotalPrice = (cartData, quantities) => {

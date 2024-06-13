@@ -3,9 +3,9 @@ import {useForm} from "react-hook-form";
 import {CiUser} from "react-icons/ci";
 import {Link, useNavigate} from "react-router-dom";
 // import Title from "../components/title/Title";
-// import {getUser} from "../utilities/cartBD";
+// import {getUser} from "../utilities/Function";
 import Title from "../../components/title/Title";
-import { getUser } from "../../utilities/cartBD";
+import { getUser } from "../../utilities/Function";
 
 const Login = () => {
   const navigate = useNavigate();

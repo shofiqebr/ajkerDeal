@@ -3,7 +3,6 @@ import Home from "../pages/home/Home";
 import AllCategory from "../pages/allCategory/AllCategory";
 // import { Root } from "postcss";
 import ErrorPage from "../pages/errorPage/ErrorPage";
-import Root from "../../Root";
 import CheckOut from "../pages/checkout/CheckOut";
 // import AddToCart1 from "../pages/addToCart1/AddToCart1";
 // import ProductDetails1 from "../pages/productDetails1/ProductDetails1";
@@ -18,6 +17,7 @@ import Registration from "../pages/registration/Registration";
 import Form from '../pages/landing/files/From'
 import Profile from "../pages/profile/Profile";
 import { loader } from "../utilities/loader";
+import App from "../../App";
 
 
 
@@ -27,7 +27,7 @@ import { loader } from "../utilities/loader";
 export const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root />,
+      element: <App />,
       loader: loader,
     errorElement: <ErrorPage />,
     children: [

@@ -12,7 +12,7 @@ import PopularItem from "../../components/popularItem/PopularItem";
 import SwiperMobile from "../../components/swiperMobile/SwiperMobile";
 import Title from "../../components/title/Title";
 import { useContext } from "react";
-import { GroupsContext, ItemContext, WebContext } from "../../../Root";
+import { GroupsContext, ItemContext, WebContext } from "../../../App";
 import Gadgets from "../../components/gadgets/Gadgets";
 import Motorbike from "../../components/motorBike/Motorbike";
 import FramPart from "../../components/framPart/FramPart";
@@ -41,8 +41,8 @@ const HomeMain = () => {
               <Banner />
               <SwiperMobile/>
               <div className="bg-[#F5F5F5]">
-              <HotDeal  grpData={grpData} webItmData={webItmData} itemData={itemData}/>
-              <Gadgets/>
+              {/* <HotDeal  grpData={grpData} webItmData={webItmData} itemData={itemData}/> */}
+              <Gadgets grpData={grpData} webItmData={webItmData} itemData={itemData}/>
               <Consumable/>
               <IPhone/>
               <Multi/>

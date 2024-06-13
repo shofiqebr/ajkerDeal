@@ -9,8 +9,9 @@ import "swiper/css/pagination";
 // import From from "../components/landing/From";
 import From from '../../pages/landing/files/From'
 // import Title from "../components/title/Title";
-import { ItemContext } from "../../../Root";
+// import { ItemContext } from "../../../Root";
 import Title from "../../components/title/Title";
+import { ItemContext } from "../../../App";
 // import From from "./files/From";
 
 const Item = () => {

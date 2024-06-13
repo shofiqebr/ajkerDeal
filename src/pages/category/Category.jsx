@@ -4,8 +4,9 @@ import {CiHeart} from "react-icons/ci";
 // import Title from "../components/title/Title";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {Link, useParams} from "react-router-dom";
-import { GroupsContext, WebContext } from "../../../Root";
+// import { GroupsContext, WebContext } from "../../../Root";
 import Title from "../../components/title/Title";
+import { GroupsContext, WebContext } from "../../../App";
 
 const Category = () => {
   const {id} = useParams();

@@ -3,7 +3,7 @@ import { FaBangladeshiTakaSign } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { WebContext } from "../../../Root";
+import { WebContext } from "../../../App";
 
 const Multi = () => {
     const webItmData = useContext(WebContext);

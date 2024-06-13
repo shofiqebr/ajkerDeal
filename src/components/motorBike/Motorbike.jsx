@@ -1,10 +1,13 @@
 import { FaChevronRight } from "react-icons/fa";
-import bikeImg from '../../assets/bike.webp'
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { WebContext } from "../../../App";
 
 
 const Motorbike = () => {
+
+    const webItmData = useContext(WebContext);
     return (
         <div className="bg-[#808080] max-w-[1200px] mx-auto px-5 mt-10 md:block hidden" >
 
@@ -16,83 +19,26 @@ const Motorbike = () => {
 
 
             {/* card start */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5 place-items-center py-5 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:flex justify-center items-center flex-wrap gap-5 place-items-center py-5 ">
            
-           <Link to='/product'>
+            {webItmData
+		.filter((item) => item.item_group === 'iPhone Repair')
+		.map((item, idx) => (
+
+<Link to={`../item/${item.item_code}`} key={idx}>
             <div className="bg-white ">
                 <div className="flex justify-end">
 
                 <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
                 </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
+                <img className="p-1 md:w-48 mb-5" src={`https://erp.icfix.com.bd${item.website_image}`} alt="" />
+                <p className="pl-1">{item.web_item_name.length > 14 ? `${item.web_item_name.substring(0, 14)}...` : item.web_item_name}</p>
                 <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
             </Link>
-            <div className="bg-white ">
-                <div className="flex justify-end">
 
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            <div className="bg-white ">
-                <div className="flex justify-end">
-
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            <div className="bg-white ">
-                <div className="flex justify-end">
-
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            <div className="bg-white ">
-                <div className="flex justify-end">
-
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            <div className="bg-white ">
-                <div className="flex justify-end">
-
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            <div className="bg-white ">
-                <div className="flex justify-end">
-
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            <div className="bg-white ">
-                <div className="flex justify-end">
-
-                <section className="bg-[#E0CF97] w-20 h- text-sm rounded-bl-lg text-center font-bold ">Used</section>
-                </div>
-                <img className="p-1 md:w-48 mb-5" src={bikeImg} alt="" />
-                <p className="pl-1">ATV Quad Bike</p>
-                <p className="pl-1 flex justify-start items-center text-red-400 pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-      
+))}
+           
             </div>
             
             {/* card end */}

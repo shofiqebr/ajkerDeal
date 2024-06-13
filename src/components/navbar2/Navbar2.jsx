@@ -5,7 +5,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import category1 from '../../assets/category1.png'
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../../../Root";
+import { CartContext } from "../../../App";
 
 // import logo from '../../assets/logo.svg';
 const Navbar2 = () => {
@@ -85,7 +85,7 @@ const Navbar2 = () => {
 										{/* <span className='badge badge-sm indicator-item md:block hidden'>
 											8
 										</span> */}
-										<span className="bg-[#F26734] text-white badge badge-md absolute top-[-12px] left-3">{cartItems}</span>
+										<span className="bg-[#F26734] text-white badge badge-md absolute top-[-12px] md:left-3 left-2">{cartItems}</span>
 									</div>
 								</Link>
 

@@ -13,10 +13,10 @@ import ReactImageMagnify from "react-image-magnify";
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import Title from "../components/title/Title";
-// import {addToCart} from "../utilities/cartBD";
-import { CartContext, ItemContext, WebContext } from "../../../Root";
+// import {addToCart} from "../utilities/Function";
+import { CartContext, ItemContext, WebContext } from "../../../App";
 import Title from "../../components/title/Title";
-import { addToCart } from "../../utilities/cartBD";
+import { addToCart } from "../../utilities/Function";
 
 const Product = () => {
   const {name} = useParams();

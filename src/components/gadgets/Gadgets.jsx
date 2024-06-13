@@ -7,8 +7,15 @@ import tShirt from '../../assets/t-shirt.webp';
 import { FaBangladeshiTakaSign } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
-const Gadgets = () => {
+const Gadgets = (props) => {
+	const {grpData, webItmData, itemData} = props;
     const [tabIndex, setTabIndex] = useState(0);
+
+	const rate = (id) => {
+		let fil = itemData.find((item) => item.item_code === id);
+		return fil?.standard_rate;
+	};
+	
     return (
         <div className=' my-10 md:bg-[#F5F5F5] pb-2 border-t-2 md:border-none border-blue-300'>
 
@@ -37,49 +44,40 @@ const Gadgets = () => {
             <Tabs
 					selectedIndex={tabIndex}
 					onSelect={(index) => setTabIndex(index)}
-					className='flex justify-center flex-col items-center'
+					className=' '
 				>
 					<TabList
 						role='tablist'
-						className='text-center  bg- flex  gap-2 py-2'
+						className=' text-center  flex justify-center  gap-2 py-2 overflow-x-auto '
 					>
+						{grpData.map((grp, index) => (
 						<Tab
+							key={index}
 							role='tab'
-							className='tab  w-16 text-sm  border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							className=' flex justify-center items-center
+							 tabs-bordered  w-20 px-3 h-12 md:text-sm  text-xs border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
-							Shirts
+							{grp.name}
 						</Tab>
-						<Tab
-							role='tab'
-							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
-						>
-							Shirts
-						</Tab>
-						<Tab
-							role='tab'
-							className='tab w-16 text-sm border bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
-						>
-							Shirts
-						</Tab>
-						<Tab
-							role='tab'
-							className='tab w-16 text-sm border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
-						>
-							Shirts
-						</Tab>
+						))}
 						
 					</TabList>
-					<TabPanel className='bg-transparent md:my-5 my-2 '>
+
+
+					{grpData.map((grp, index) => (
+					<TabPanel key={index} className='bg-transparent md:my-5 my-2 '>
 
 						<div className='flex justify-center items-center'>
 
 			
 
 						<div className='grid xl:grid-col-8 grid-cols-4  gap-2'>
-
-						<Link to='product'>
+						{webItmData
+                    .filter((item) => item.item_group === grp.name)
+                    .map((itm, index) => (
+						<Link key={index} to={`/item/${itm?.item_code}`}>
 					<div className='md:border-2  md:h-52 bg-white'>
-							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
+							<img className='md:w-48 md:h-40 w-20 h-22' src={`https://erp.icfix.com.bd${itm?.thumbnail}`} alt='' />
 							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
 							<p className='flex justify-start items-center gap-1 md:pl-2'>
 								<FaBangladeshiTakaSign className='hidden md:block' />
@@ -92,54 +90,16 @@ const Gadgets = () => {
 							</div>
 						</div>
 						</Link>
-						<div className='md:border-2  md:h-52 bg-white'>
-							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
-							<p className='flex justify-start items-center gap-1 md:pl-2'>
-								<FaBangladeshiTakaSign className='hidden md:block' />
-								<p className='font-bold'>110</p>
-							</p>
-							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
-								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
-								<p className=''>110</p>
-							</del>
-							</div>
-						</div>
-						<div className='md:border-2  md:h-52 bg-white'>
-							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
-							<p className='flex justify-start items-center gap-1 md:pl-2'>
-								<FaBangladeshiTakaSign className='hidden md:block' />
-								<p className='font-bold'>110</p>
-							</p>
-							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
-								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
-								<p className=''>110</p>
-							</del>
-							</div>
-						</div>
-						<div className='md:border-2  md:h-52 bg-white'>
-							<img className='md:w-48 md:h-40 w-20 h-22' src={tShirt} alt='' />
-							<div className='flex justify-center items-center md:flex-col md:text-sm text-[8px]'>
-							<p className='flex justify-start items-center gap-1 md:pl-2'>
-								<FaBangladeshiTakaSign className='hidden md:block' />
-								<p className='font-bold'>110</p>
-							</p>
-							<del className='flex items-center md:opacity-30 opacity-80 md:-mt-2 pl-1'>
-								<FaBangladeshiTakaSign className='opacity-70 hidden md:block' />
-								<p className=''>110</p>
-							</del>
-							</div>
-						</div>
+						))}
+					
 
 						</div>
 						</div>
 						
 						
 					</TabPanel>
-					<TabPanel className='bg-transparent'></TabPanel>
-					<TabPanel className='bg-transparent'></TabPanel>
-					<TabPanel className='bg-transparent'></TabPanel>
+					))}
+					
 				</Tabs>
 
             {/* tab part end */}
