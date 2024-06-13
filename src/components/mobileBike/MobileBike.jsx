@@ -14,8 +14,12 @@ import 'swiper/css/scrollbar';
 
 // import required modules
 import {Scrollbar } from 'swiper/modules';
+import { useContext } from "react";
+import { WebContext } from "../../../App";
+import { Link } from "react-router-dom";
 
 const MobileBike = () => {
+    const webItmData = useContext(WebContext);
     return (
         <div className="md:hidden block">
             <div className="flex justify-between items-center bg-[#fd7e53] px-4 py-1">
@@ -37,128 +41,32 @@ const MobileBike = () => {
                 
               <div className="bg-[#fdecb5] py-1">
 
+
+            
                 
-              <div className='md:hidden block pb-3 '>
-        <Swiper
-        slidesPerView={4}
-        centeredSlides={false}
-        slidesPerGroupSkip={4}
-        grabCursor={true}
-        
-        breakpoints={{
-          400: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-          },
-        }}
-        scrollbar={true}
-      
-        
-        modules={[Scrollbar]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
+              <div className='md:hidden pb-3 flex overflow-x-scroll gap-2 '>
+
+              {webItmData
+		.filter((item) => item.item_group === 'iPhone Repair')
+		.map((item, idx) => (
+
+<Link to={`../item/${item.item_code}`} key={idx}>
+              <div className='flex justify-center items-center flex-col'>
         <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
                 <div className="flex justify-end ">
 
                 {/* <section className="bg-[#E0CF97] w-12 h-4 flex
                 justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
                 </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
+                <img className="p-1 w-20 mb-1" src={`https://erp.icfix.com.bd${item.website_image}`} alt="" />
+                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">{item.web_item_name.length > 14 ? `${item.web_item_name.substring(0, 14)}...` : item.web_item_name}</p>
                 <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
             </div>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
-        <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
-                <div className="flex justify-end ">
 
-                {/* <section className="bg-[#E0CF97] w-12 h-4 flex
-                justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
-                </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
-                <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
-        <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
-                <div className="flex justify-end ">
+            </Link>
 
-                {/* <section className="bg-[#E0CF97] w-12 h-4 flex
-                justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
-                </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
-                <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
-        <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
-                <div className="flex justify-end ">
-
-                {/* <section className="bg-[#E0CF97] w-12 h-4 flex
-                justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
-                </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
-                <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
-        <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
-                <div className="flex justify-end ">
-
-                {/* <section className="bg-[#E0CF97] w-12 h-4 flex
-                justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
-                </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
-                <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
-        <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
-                <div className="flex justify-end ">
-
-                {/* <section className="bg-[#E0CF97] w-12 h-4 flex
-                justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
-                </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
-                <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex justify-center items-center flex-col'>
-        <div className="bg-white w-20 border-[#E0CF97] border-2  rounded my-3">
-                <div className="flex justify-end ">
-
-                {/* <section className="bg-[#E0CF97] w-12 h-4 flex
-                justify-center items-center  text-sm rounded-bl-lg text-center font-bold z-10 ">Used</section> */}
-                </div>
-                <img className="p-1 w-20 mb-1" src={bikeImg} alt="" />
-                <p className="pl-1 text-[10px] text-center text-blue-700 font-bold">ATV Quad</p>
-                <p className="pl-3 text-[10px] flex justify-start items-center text-red-500 font-bold pb-2"><FaBangladeshiTakaSign /> 1,80,000 /-</p>
-            </div>
-            </div>
-        </SwiperSlide>
-        
-      
-        
-      </Swiper>
+))}
 
              </div>
              <hr className="border-[#FD7E53] pb-2" />
