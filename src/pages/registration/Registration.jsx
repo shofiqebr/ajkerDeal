@@ -1,13 +1,12 @@
 import {CiUser} from "react-icons/ci";
-import logo from "../../assets/google.svg";
+import logo from './../../assets/google.svg' 
 import {Link, useNavigate} from "react-router-dom";
-// import Title from "../components/title/Title";
+
 import {useForm} from "react-hook-form";
 import {toast} from "react-toastify";
-// import {getUser, postData} from "../utilities/Function";
+
 import Title from "../../components/title/Title";
 import { getUser, postData } from "../../utilities/Function";
-// import { getUser, postData } from "../utilities/Function";
 
 const Registration = () => {
   const navigate = useNavigate();
@@ -61,7 +60,7 @@ const Registration = () => {
             <header className="mb-4 text-center bg-[#f85606] p-4 rounded ">
               <h3 className="text-xl flex items-center justify-center gap-3 font-medium text-white">
                 <CiUser className="text-2xl" />
-                রেজিস্ট্রেশন (নতুন ইউজার)
+                Registration (New user)
               </h3>
             </header>
             <div className="flex flex-col">
@@ -77,7 +76,7 @@ const Registration = () => {
                 <label
                   htmlFor="id-b03"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার নাম লিখুন *
+                   Name
                 </label>
               </div>
               {/*      <!-- Input field --> */}
@@ -92,7 +91,7 @@ const Registration = () => {
                 <label
                   htmlFor="id-b03"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার ইমেইল আ্যড্রেসটি লিখুন
+                  Email
                 </label>
               </div>
               {/*      <!-- Input field --> */}
@@ -107,7 +106,7 @@ const Registration = () => {
                 <label
                   htmlFor="id-b13"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার ঠিকানাটি লিখুন *
+                  Address
                 </label>
               </div>
               <div className="relative my-6">
@@ -121,7 +120,7 @@ const Registration = () => {
                 <label
                   htmlFor="id-b13"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার মোবাইল নাম্বারটি লিখুন *
+                  Mobile No.
                 </label>
               </div>
               {/*      <!-- Input field --> */}
@@ -136,7 +135,7 @@ const Registration = () => {
                 <label
                   htmlFor="id-b13"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার পাসওয়ার্ডটি লিখুন *
+                  Password
                 </label>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +163,7 @@ const Registration = () => {
                 <label
                   htmlFor="id-b13"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  অনুগ্রহ করে আরেকবার পাসওয়ার্ডটি লিখুন *
+                  Retype Password
                 </label>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,14 +181,18 @@ const Registration = () => {
               </div>
               {/* আমি একজন */}
               <div className="flex justify-center gap-5 items-center mt-8">
-                <p>আমি একজন</p>
+                <p>I am</p>
                 <div className="flex items-center gap-3">
                   <input type="radio" name="radio-1" className="radio size-5" value="Male" {...register("gender")} />
-                  <label htmlFor="পুরুষ">পুরুষ</label>
+                  <label htmlFor="পুরুষ">Male</label>
                 </div>
                 <div className="flex items-center gap-3">
                   <input type="radio" name="radio-1" className="radio size-5" value="Female" {...register("gender")} />
-                  <label htmlFor="নারী">নারী</label>
+                  <label htmlFor="নারী">Female</label>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="radio" name="radio-1" className="radio size-5" value="Others" {...register("gender")} />
+                  <label htmlFor="নারী">Others</label>
                 </div>
               </div>
             </div>
@@ -197,13 +200,13 @@ const Registration = () => {
           {/*  <!-- Action base sized basic button --> */}
           <div className="flex justify-end p-4 ">
             <button className="inline-flex h-10 w-44 mx-auto items-center justify-center gap-2 whitespace-nowrap rounded bg-[#f85606] px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-[#9a471d] focus-visible:outline-none disabled:cursor-not-allowed  disabled:shadow-none">
-              <span>রেজিস্টার</span>
+              <span>Register</span>
             </button>
           </div>
           <div className="mt-4 text-center">
-            <p className="font-bold mb-2">অথবা</p>
+            <p className="font-bold mb-2">Or</p>
             <Link to="/login" className="cursor-pointer text-xs font-bold text-[#f85606] hover:text-red-600">
-              লগইন
+            Login
             </Link>
             <div className="w-44 bg-slate-200 hover:bg-slate-100 p-2 rounded mx-auto mt-5 mb-7">
               <button className="flex items-center gap-4 font-semibold text-black">

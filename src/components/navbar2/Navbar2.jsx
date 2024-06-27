@@ -3,14 +3,22 @@ import { FaChevronDown } from "react-icons/fa";
 import { GrUserManager } from "react-icons/gr";
 import { IoIosHeartEmpty } from "react-icons/io";
 import category1 from '../../assets/category1.png'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../../../App";
+import { CartContext, UserContext } from "../../../App";
 
 // import logo from '../../assets/logo.svg';
 const Navbar2 = () => {
-	const {cartItems} = useContext(CartContext);
 
+	const navigate = useNavigate();
+	const {cartItems} = useContext(CartContext);
+	const {user, setUser} = useContext(UserContext);
+  
+	const logOut = () => {
+	setUser("");
+	localStorage.removeItem(`${window.location.hostname}-token`);
+	navigate("/");
+	};
 	return (
 		<div>
 			<div className='bg-base-100 md:w-full flex justify-center items-center md:pt-10 px-4'>
@@ -65,9 +73,10 @@ const Navbar2 = () => {
 
 
 
-
-								<Link to='/cart'>
-									<div className='indicator '>
+							<div className="flex justify-center items-center gap-5">
+								
+							<Link to='/cart'>
+									<div className='indicator pr-2 '>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
 											className='h-5 w-5'
@@ -82,14 +91,30 @@ const Navbar2 = () => {
 												d='M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z'
 											/>
 										</svg>
-										{/* <span className='badge badge-sm indicator-item md:block hidden'>
-											8
-										</span> */}
+										
 										<span className="bg-[#F26734] text-white badge badge-md absolute top-[-12px] md:left-3 left-2">{cartItems}</span>
 									</div>
 								</Link>
 
 
+
+								{/* login option */}
+								{user ? (
+          <>
+            <Link to="/profile">
+              <span className="md:hover:bg-[#f96331] hover:text-white hidden  btn md:flex justify-center  rounded-none bg-transparent border-[#f96331]">{user}</span>
+            </Link>
+            <button onClick={() => logOut()} className="md:hover:bg-[#f96331] hover:text-white hidden  btn md:flex justify-center  rounded-none bg-transparent border-[#f96331]">
+              Log Out
+            </button>
+          </>
+        ) : (
+          <Link to="/login">
+            <span className="md:hover:bg-[#f96331] hover:text-white hidden  btn md:flex justify-center  rounded-none bg-transparent border-[#f96331]">Login</span>
+          </Link>
+        )}
+
+							</div>
 
 
 								</div>
@@ -99,25 +124,7 @@ const Navbar2 = () => {
 
 
 
-								{/* <div
-									tabIndex={0}
-									className='mt-3 z-[1] card card-compact dropdown-content md:w-52 w-40 bg-base-100 shadow'
-								>
-									<div className='card-body'>
-										<span className='font-bold text-lg'>
-											8 Items
-										</span>
-										<span className='text-info'>
-											Subtotal: $999
-										</span>
-										<div className='card-actions '>
-											<button className='btn btn-primary btn-block '>
-												View cart
-											</button>
-										</div>
-									</div>
-								</div> */}
-
+							
 							</div>
 
 						</div>

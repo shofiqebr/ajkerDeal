@@ -2,21 +2,39 @@ import {toast} from "react-toastify";
 import {useForm} from "react-hook-form";
 import {CiUser} from "react-icons/ci";
 import {Link, useNavigate} from "react-router-dom";
-// import Title from "../components/title/Title";
-// import {getUser} from "../utilities/Function";
+
+
+
+import {useContext, useEffect} from "react";
 import Title from "../../components/title/Title";
-import { getUser } from "../../utilities/Function";
+import { addToProceed, getUser, getUserCartData } from "../../utilities/Function";
+import { CartContext, UserContext } from "../../../App";
 
 const Login = () => {
   const navigate = useNavigate();
+  const {user, setUser} = useContext(UserContext);
+  const {setCartItems} = useContext(CartContext);
   const {register, handleSubmit} = useForm();
+
+  useEffect(() => {
+    if (user) {
+      return navigate("/");
+    }
+  }, [user]);
 
   const onSubmit = (data) => {
     getUser(data.mail, data.password)
-      .then((isUserValid) => {
-        if (isUserValid) {
-          navigate("/");
-          toast(`Welcome`);
+      .then((user) => {
+        if (user) {
+          console.log(user);
+          toast(`Welcome ${user}`);
+          setUser(user);
+          addToProceed(encodeURIComponent(btoa(`${data.mail}_${data.password}`)), "token");
+          getUserCartData(user).then((cart) => {
+            addToProceed(cart, "cart");
+            setCartItems(cart.length);
+            navigate("/");
+          });
         } else {
           toast("Validation Failed. Try Again");
         }
@@ -36,7 +54,7 @@ const Login = () => {
             <header className="mb-4 text-center bg-[#f85606] p-4 rounded ">
               <h3 className="text-xl flex items-center justify-center gap-3 font-medium text-white">
                 <CiUser className="text-2xl" />
-                লগইন
+                Login
               </h3>
             </header>
             <div className="flex flex-col">
@@ -52,7 +70,7 @@ const Login = () => {
                 <label
                   htmlFor="id-b03"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার ইমেইল আ্যড্রেসটি লিখুন
+                  Please give your email address
                 </label>
               </div>
               {/*      <!-- Input field --> */}
@@ -67,7 +85,7 @@ const Login = () => {
                 <label
                   htmlFor="id-b13"
                   className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                  আপনার পাসওয়ার্ডটি লিখুন *
+                  Please give your password 
                 </label>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,13 +106,13 @@ const Login = () => {
           {/*  <!-- Action base sized basic button --> */}
           <div className="flex justify-end p-4 ">
             <button className="inline-flex h-10 w-44 mx-auto items-center justify-center gap-2 whitespace-nowrap rounded bg-[#f85606] px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-[#9a471d] focus-visible:outline-none disabled:cursor-not-allowed disabled:shadow-none">
-              <span>লগইন</span>
+              <span>Login</span>
             </button>
           </div>
           <div className="mt-4 text-center mb-4">
-            <p className="font-bold">অথবা</p>
+            <p className="font-bold">Or</p>
             <Link to="/registration" className="mt-3 cursor-pointer text-xs font-bold text-[#f85606] hover:text-red-600">
-              রেজিস্টার
+              Register
             </Link>
           </div>
         </form>

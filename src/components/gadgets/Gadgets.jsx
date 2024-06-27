@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Gadgets = (props) => {
 	const {grpData, webItmData, itemData} = props;
+	
     const [tabIndex, setTabIndex] = useState(0);
 
 	const rate = (id) => {
@@ -48,14 +49,14 @@ const Gadgets = (props) => {
 				>
 					<TabList
 						role='tablist'
-						className=' text-center  flex justify-center  gap-2 py-2 overflow-x-auto '
+						className=' text-center  flex justify-center  gap-2 py-2 flex-wrap '
 					>
 						{grpData.map((grp, index) => (
 						<Tab
 							key={index}
 							role='tab'
 							className=' flex justify-center items-center
-							 tabs-bordered  w-20 px-3 h-12 md:text-sm  text-xs border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
+							 tabs-bordered  w-32 px-3 h-12 md:text-sm  text-xs border  bg-[#FF8C00] rounded-md text-white focus:outline-none focus:ring focus:ring-violet-300'
 						>
 							{grp.name}
 						</Tab>

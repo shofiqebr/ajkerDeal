@@ -8,9 +8,9 @@ export const loader = async () => {
         api_secret: "f177dc5a13eef46",
         api_key: "fb6a7b744acef86",
       },
-      }
-      );
-    console.log(groupsData);
+    }
+  );
+  // console.log(groupsData);
   const groups = await groupsData.json();
 
   const itemsData = await fetch(`https://erpmethods.vercel.app/gets/Website Item?filters=[["published", "=", 1]]`, {
@@ -21,7 +21,6 @@ export const loader = async () => {
       api_key: "fb6a7b744acef86",
     },
   });
-  console.log(itemsData);
   const webItems = await itemsData.json();
 
   const itmRate = await fetch(
@@ -31,12 +30,11 @@ export const loader = async () => {
       headers: {
         url: "https://erp.icfix.com.bd/",
         api_secret: "f177dc5a13eef46",
-        api_key: "fb6a7b744acef86",
+        api_key: "fb6a7b744acef86", 
       },
     }
   );
-  console.log(itmRate);
   const items = await itmRate.json();
-
+// console.log(groups, webItems,items);
   return {groups, webItems, items};
 };

@@ -1,8 +1,8 @@
 import { FaBangladeshiTakaSign, FaChevronRight } from "react-icons/fa6";
-import bikeImg from '../../assets/bike.webp'
+// import bikeImg from '../../assets/bike.webp'
 // import mobileImg from '../../assets/mobile2.avif'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,7 +13,7 @@ import 'swiper/css/scrollbar';
 // import './styles.css';
 
 // import required modules
-import {Scrollbar } from 'swiper/modules';
+// import {Scrollbar } from 'swiper/modules';
 import { useContext } from "react";
 import { WebContext } from "../../../App";
 import { Link } from "react-router-dom";
